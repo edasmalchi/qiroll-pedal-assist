@@ -23,7 +23,7 @@
      
     // constants won't change. They're used here to set pin numbers:
     const byte buttonPin = 2;   // the number of the pushbutton pin
-    const byte ledPin = 1;      // the number of the LED pin (TODO change name when connected to throttle input)
+    const byte ledPin = 1;      // the number of the LED pin (placeholder for throttle input)
     const byte hall_Sensor=0;
     const byte modeChange=4; //pin to eventually change controller mode...
      
@@ -35,14 +35,17 @@
     unsigned long changeDelay = 1000;  // "double-click" timeout, (double-click changes controller mode)
 
     unsigned long pulseDuration = 0;
-    unsigned long pulseThreshold = 500000; // 500,000us = 500ms (for bench testing)
+    unsigned long pulseThreshold = 400000; // 400,000us = 400ms (for bench testing)
+
     // TODO replace bench testing value once on bike
     // bike value estimate: 2000ms/24 = 83.3ms = 83,333us (approx duration of each low(or high) pulse at 30rpm) (12 highs, 12 lows so 24 pulses/rev)
-     
+    // low/high pulses seem approx. equal duration on my 12-magnet sensor. 
+
     void setup() {
       pinMode(buttonPin, INPUT_PULLUP);
-      //interrupt 0 is P2, at least on attiny85 digispark/clones
-      attachInterrupt(0, ISR_modes, CHANGE);
+      //interrupt 0 is P2(buttonPin), at least on attiny85 digispark/clones
+      attachInterrupt(0, ISR_pasState, CHANGE);
+      
       pinMode(ledPin, OUTPUT);
       pinMode(hall_Sensor, INPUT_PULLUP);
       pinMode(modeChange, OUTPUT);
@@ -53,6 +56,7 @@
      
     void loop() {
 
+     //change controller mode if button double-clicked
      if (pasState != lastpasState){
 
        if ((millis() - lastChangeTime) < changeDelay){
@@ -66,22 +70,25 @@
      }
      
       // Main pulse timing block!
-
+      
       if (pasState){  
-        //get duration of low pas sensor pulse. low/high pulses seem approx. equal duration on my 12-magnet sensor. 
-        pulseDuration = pulseIn(hall_Sensor, LOW);
+        
+        pulseDuration = pulseIn(hall_Sensor, LOW); 
         if (pulseDuration != 0 && pulseDuration <  pulseThreshold){
-          digitalWrite(1, HIGH);   // set the LED on
+          digitalWrite(ledPin, HIGH);   // set the LED on if pulses short enough
         }
         else{
-          digitalWrite(1, LOW);    // set the LED off
+          digitalWrite(ledPin, LOW);    // set the LED off if pulses too long
         }
+     }
+     else{
+      digitalWrite(ledPin, LOW);  // set the LED off if pas is turned off while LED on
      }
 
     }
 
     // button press interrupt handler
-    void ISR_modes() {
+    void ISR_pasState() {
       
       static unsigned long last_interrupt_time = 0;
       unsigned long interrupt_time = millis();
