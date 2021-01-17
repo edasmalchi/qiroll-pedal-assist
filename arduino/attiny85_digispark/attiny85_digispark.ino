@@ -65,7 +65,7 @@
       lastpasState = pasState;
      }
      
-      // Main pulse counting block!
+      // Main pulse timing block!
 
       if (pasState){  
         //get duration of low pas sensor pulse. low/high pulses seem approx. equal duration on my 12-magnet sensor. 
@@ -80,12 +80,13 @@
 
     }
 
+    // button press interrupt handler
     void ISR_modes() {
       
       static unsigned long last_interrupt_time = 0;
       unsigned long interrupt_time = millis();
        // If interrupts come faster than 175ms, assume it's a bounce and ignore
-       // NOTE test bounce with Qiroll include switch; 175 appropriate for cheap breadboard pushbutton
+       // NOTE test bounce with Qiroll included switch; 175 appropriate for cheap breadboard pushbutton
        if (interrupt_time - last_interrupt_time > 175)
        {
           pasState = !pasState;
