@@ -1,89 +1,59 @@
     /*
-      Digispark PAS System for Qiroll ebike kit
+      Digispark (ATTINY85) PAS System for Qiroll ebike kit
+      
+     (implemented on a "Ximimmark" clone: https://smile.amazon.com/gp/product/B07KVS4YGQ/, 
+     note clone has P5 set to reset so can't be used... )
+
+     Functionality:
      
       - steady output when PAS hall sensor input is pulsing
       - starts in "off" state, button toggles
       - double-click button within one second to change controller mode (eco<->power)
-
-      A work in progress
+          (note that very fast (<175ms) double-clicks may be seen as a bounce and not register)
      
-      The circuit:
+     Hardware Connections:
+     
       - PAS sensor input on P0
       - button from P2 to ground
       - Qiroll controller throttle switch input on P1 output
       - Qiroll controller mode toggle input on P4 output
       - (P3 reserved for addition of brake sensor)
 
-     Debouncing is a version of:
-      http://www.arduino.cc/en/Tutorial/Debounce
     */
      
     // constants won't change. They're used here to set pin numbers:
     const byte buttonPin = 2;   // the number of the pushbutton pin
-    const byte ledPin = 1;      // the number of the LED pin
+    const byte ledPin = 1;      // the number of the LED pin (TODO change name when connected to throttle input)
     const byte hall_Sensor=0;
     const byte modeChange=4; //pin to eventually change controller mode...
      
     // Variables will change:
-    boolean modeState = false;         // the current mode state (false=no PAS)
-    boolean lastModeState = false;     // the previous mode state
-    int buttonState;             // the current reading from the input pin
-    int lastButtonState = HIGH;  // the previous reading from the input pin
-     
-    // the following variables are unsigned longs because the time, measured in
-    // milliseconds, will quickly become a bigger number than can be stored in an int.
-    unsigned long lastDebounceTime = 0;  // the last time the output pin was toggled
-    unsigned long debounceDelay = 50;    // the debounce time; increase if the output flickers
-    unsigned long lastChangeTime = 0;  // the last time the mode state was changes
-    unsigned long changeDelay = 1000;    // "double-click" time, use to toggle modeChange
+    boolean pasState = false;         // is pedal assist (pas) active?  (false=no pas)
+    boolean lastpasState = false;     // was pedal assist active?
+
+    unsigned long lastChangeTime = 0;  // the last time the pas state was changed
+    unsigned long changeDelay = 1000;  // "double-click" timeout, (double-click changes controller mode)
 
     unsigned long pulseDuration = 0;
-    unsigned long pulseThreshold = 300000; 
+    unsigned long pulseThreshold = 500000; // 500,000us = 500ms (for bench testing)
+    // TODO replace bench testing value once on bike
+    // bike value estimate: 2000ms/24 = 83.3ms = 83,333us (approx duration of each low(or high) pulse at 30rpm) (12 highs, 12 lows so 24 pulses/rev)
      
     void setup() {
       pinMode(buttonPin, INPUT_PULLUP);
+      //interrupt 0 is P2, at least on attiny85 digispark/clones
+      attachInterrupt(0, ISR_modes, CHANGE);
       pinMode(ledPin, OUTPUT);
       pinMode(hall_Sensor, INPUT_PULLUP);
       pinMode(modeChange, OUTPUT);
 
       digitalWrite(modeChange, LOW);
-      // flash on startup...
-       //digitalWrite(ledPin, HIGH);
-       //delay(100);
       digitalWrite(ledPin, LOW);
     }
      
     void loop() {
-      
-      // read the state of the switch into a local variable:
-      int reading = digitalRead(buttonPin);
-     
-      // check to see if you just pressed the button
-      // (i.e. the input went from LOW to HIGH), and you've waited long enough
-      // since the last press to ignore any noise:
-     
-      // If the switch changed, due to noise or pressing:
-      if (reading != lastButtonState) {
-        // reset the debouncing timer
-        lastDebounceTime = millis();
-      }
-     
-      if ((millis() - lastDebounceTime) > debounceDelay) {
-        // whatever the reading is at, it's been there for longer than the debounce
-        // delay, so take it as the actual current state:
-     
-        // if the button state has changed:
-        if (reading != buttonState) {
-          buttonState = reading;
-     
-          // only toggle the LED if the new button state is LOW
-          if (buttonState == LOW) {
-            modeState = !modeState;
-          }
-        }
-      }
 
-     if (modeState != lastModeState){
+     if (pasState != lastpasState){
 
        if ((millis() - lastChangeTime) < changeDelay){
         // placeholder action, will eventually be used to bring pin low when connected to Qiroll controller
@@ -92,35 +62,34 @@
          digitalWrite(modeChange, LOW);
        }
       lastChangeTime = millis();
-      lastModeState = modeState;
+      lastpasState = pasState;
      }
      
       // Main pulse counting block!
 
-      // can rewrite all button interaction as interrupt routine? that might fix
-     if (digitalRead(hall_Sensor)==HIGH && (modeState)){ // TODO no other code runs if sensor is HIGH?? What's up??
-        
-        pulseDuration = pulseIn(hall_Sensor, LOW); //300,000us = 300ms? (test value)
+      if (pasState){  
+        //get duration of low pas sensor pulse. low/high pulses seem approx. equal duration on my 12-magnet sensor. 
+        pulseDuration = pulseIn(hall_Sensor, LOW);
         if (pulseDuration != 0 && pulseDuration <  pulseThreshold){
           digitalWrite(1, HIGH);   // set the LED on
         }
         else{
           digitalWrite(1, LOW);    // set the LED off
         }
-      }
+     }
 
-
-      
-      
-//     if(digitalRead(hall_Sensor)==HIGH && modeState)      //Check the sensor output (mine reads low with magnet, double check?)
-//    {
-//    digitalWrite(1, HIGH);   // set the LED on
-//    }
-//     else
-//    {
-//    digitalWrite(1, LOW);    // set the LED off
-//    }
-  
-      // save the reading. Next time through the loop, it'll be the lastButtonState:
-      lastButtonState = reading;
     }
+
+    void ISR_modes() {
+      
+      static unsigned long last_interrupt_time = 0;
+      unsigned long interrupt_time = millis();
+       // If interrupts come faster than 175ms, assume it's a bounce and ignore
+       // NOTE test bounce with Qiroll include switch; 175 appropriate for cheap breadboard pushbutton
+       if (interrupt_time - last_interrupt_time > 175)
+       {
+          pasState = !pasState;
+       }
+       last_interrupt_time = interrupt_time;
+      }
+    
