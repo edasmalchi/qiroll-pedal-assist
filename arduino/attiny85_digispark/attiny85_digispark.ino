@@ -24,18 +24,23 @@
     // constants won't change. They're used here to set pin numbers:
     const byte buttonPin = 2;   // the number of the pushbutton pin
     const byte ledPin = 1;      // the number of the LED pin (TODO change name when connected to throttle input)
-    const byte hall_Sensor=0;
-    const byte modeChange=4; //pin to eventually change controller mode...
+    const byte hall_Sensor = 0;
+    const byte modeChange = 4; //pin to eventually change controller mode...
      
     // Variables will change:
+    byte pasReading    //current pas sensor reading
+    byte lastPasReading //previous pas sensor reading
+    unsigned long lastPasReadingChangeTime = 0;  // the last time the pas sensor reading changed
+//    unsigned long changeDelay = 1000;  // "double-click" timeout, (double-click changes controller mode)
+    
     boolean pasState = false;         // is pedal assist (pas) active?  (false=no pas)
-    boolean lastpasState = false;     // was pedal assist active?
+    boolean lastPasState = false;     // was pedal assist active?
 
-    unsigned long lastChangeTime = 0;  // the last time the pas state was changed
+    unsigned long lastPasStateChangeTime = 0;  // the last time the pas state was changed
     unsigned long changeDelay = 1000;  // "double-click" timeout, (double-click changes controller mode)
 
-    unsigned long pulseDuration = 0;
-    unsigned long pulseThreshold = 500000; // 500,000us = 500ms (for bench testing)
+//    unsigned long pulseDuration = 0;
+//    unsigned long pulseThreshold = 500000; // 500,000us = 500ms (for bench testing)
     // TODO replace bench testing value once on bike
     // bike value estimate: 2000ms/24 = 83.3ms = 83,333us (approx duration of each low(or high) pulse at 30rpm) (12 highs, 12 lows so 24 pulses/rev)
      
@@ -49,34 +54,52 @@
 
       digitalWrite(modeChange, LOW);
       digitalWrite(ledPin, LOW);
+
+      pasReading = digitalRead(hall_Sensor)
+      lastPasReading = pasReading
     }
      
     void loop() {
 
-     if (pasState != lastpasState){
+      //check if button doubleclicked, if so change controller modes
+     if (pasState != lastPasState){
 
-       if ((millis() - lastChangeTime) < changeDelay){
+       if ((millis() - lastPasStateChangeTime) < changeDelay){
         // placeholder action, will eventually be used to bring pin low when connected to Qiroll controller
          digitalWrite(modeChange, HIGH);
          delay(500);
          digitalWrite(modeChange, LOW);
        }
-      lastChangeTime = millis();
-      lastpasState = pasState;
+      lastPasStateChangeTime = millis();
+      lastPasState = pasState;
+     }
+
+     //new polling-based frequency counter...
+     
+     if (pasState){
+        pasReading = digitalRead(hall_Sensor)
+        if (pasReading != lastPasReading){
+          changes ++;
+          lastPasReading = pasReading;
+        }
      }
      
-      // Main pulse timing block!
-
-      if (pasState){  
-        //get duration of low pas sensor pulse. low/high pulses seem approx. equal duration on my 12-magnet sensor. 
-        pulseDuration = pulseIn(hall_Sensor, LOW);
-        if (pulseDuration != 0 && pulseDuration <  pulseThreshold){
-          digitalWrite(1, HIGH);   // set the LED on
-        }
-        else{
-          digitalWrite(1, LOW);    // set the LED off
-        }
+     else{
+      digitalWrite(ledPin, LOW);    // set the LED off
      }
+     
+//      // Main pulse timing block!
+//
+//      if (pasState){  
+//        //get duration of low pas sensor pulse. low/high pulses seem approx. equal duration on my 12-magnet sensor. 
+//        pulseDuration = pulseIn(hall_Sensor, LOW);
+//        if (pulseDuration != 0 && pulseDuration <  pulseThreshold){
+//          digitalWrite(1, HIGH);   // set the LED on
+//        }
+//        else{
+//          digitalWrite(1, LOW);    // set the LED off
+//        }
+//     }
 
     }
 
