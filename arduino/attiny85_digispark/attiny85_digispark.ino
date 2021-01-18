@@ -48,7 +48,7 @@
       
       pinMode(controllerThrottlePin, OUTPUT);
       pinMode(pasSensorPin, INPUT_PULLUP);
-      pinMode(controllercontrollerModeChangePinPin, OUTPUT);
+      pinMode(controllerModeChangePin, OUTPUT);
 
       digitalWrite(controllerModeChangePin, LOW);
       digitalWrite(controllerThrottlePin, LOW);
