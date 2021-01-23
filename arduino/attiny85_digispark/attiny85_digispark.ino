@@ -39,7 +39,7 @@
     unsigned long dblClickTimeout = 1000;  // "double-click" timeout in ms, (double-click changes controller mode)
 
     unsigned long pulseDuration = 0;
-    unsigned long pulseThreshold = 400000; // 400,000us = 400ms (for bench testing)
+    unsigned long pulseThreshold = 83333; // 400,000us = 400ms (for bench testing)
     // TODO replace bench testing value once on bike
     // bike value estimate: 2000ms/24 = 83.3ms = 83,333us (approx duration of each low(or high) pulse at 30rpm) (12 highs, 12 lows so 24 pulses/rev)
     // low/high pulses seem approx. equal duration on my 12-magnet sensor. 
@@ -97,7 +97,7 @@
       unsigned long interrupt_time = millis();
        // If interrupts come faster than 175ms, assume it's a bounce and ignore
        // NOTE test bounce with Qiroll included switch; 175 appropriate for cheap breadboard pushbutton
-       if (interrupt_time - last_interrupt_time > 175)
+       if (interrupt_time - last_interrupt_time > 250)
        {
           pasState = !pasState; //turn pas on/off
        }
