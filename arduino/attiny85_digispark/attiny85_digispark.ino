@@ -37,6 +37,7 @@
 
     unsigned long lastChangeTime = 0;  // the last time the pas state was changed
     unsigned long dblClickTimeout = 1000;  // "double-click" timeout in ms, (double-click changes controller mode)
+    byte clickCount = 0;
 
     unsigned long pulseDuration = 0;
     unsigned long pulseThreshold = 83333; // 400,000us = 400ms (for bench testing)
@@ -60,18 +61,26 @@
     void loop() {
 
      //change controller mode if button double-clicked
-     if (pasState != lastPasState){
+//     if (pasState != lastPasState){
+//
+//       if ((millis() - lastChangeTime) < dblClickTimeout){
+//        // change modes by bringing mode change momentarily low (if using monitor LED, LED briefly flashes)
+//         digitalWrite(controllerModeChangePin, LOW);
+//         delay(25);
+//         digitalWrite(controllerModeChangePin, HIGH);
+//       }
+//      lastChangeTime = millis();
+//      lastPasState = pasState;
+//     }
 
-       if ((millis() - lastChangeTime) < dblClickTimeout){
+        if (clickCount > 2){
         // change modes by bringing mode change momentarily low (if using monitor LED, LED briefly flashes)
          digitalWrite(controllerModeChangePin, LOW);
          delay(25);
          digitalWrite(controllerModeChangePin, HIGH);
+         clickCount = 0;
        }
-      lastChangeTime = millis();
-      lastPasState = pasState;
-     }
-     
+       
       // measure pulse durations from pas sensor to turn throttle on/off
       if (pasState){  
         
@@ -100,6 +109,19 @@
        if (interrupt_time - last_interrupt_time > 250)
        {
           pasState = !pasState; //turn pas on/off
+          
+          if ((millis() - lastChangeTime) < dblClickTimeout){
+        // change modes by bringing mode change momentarily low (if using monitor LED, LED briefly flashes)
+         clickCount ++;
+//         digitalWrite(controllerModeChangePin, LOW);
+//         delay(25);
+//         digitalWrite(controllerModeChangePin, HIGH);
+       }
+          else{
+            clickCount = 0;
+          }
+      lastChangeTime = millis();
+      lastPasState = pasState;
        }
        last_interrupt_time = interrupt_time;
       }
