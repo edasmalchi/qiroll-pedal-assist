@@ -14,4 +14,4 @@ This project aims to add pedal assist functionality to the Qiroll kit. It's curr
 #### Progress
 * working version of Arduino code
 * breadboard mockup with sensor and placeholder LEDs for controller connections
-* more to come!
+* _functional on-bike version_ with minor improvements still to come
