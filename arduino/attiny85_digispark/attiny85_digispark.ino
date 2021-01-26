@@ -9,7 +9,7 @@
      
       - steady output when PAS hall sensor input is pulsing
       - starts with PAS off, button toggles
-      - double-click button within one second to change controller mode (eco<->power)
+      - triple-click button within 3 seconds to change controller mode (eco<->power)
           (note that very fast (<175ms) double-clicks may be seen as a bounce and not register)
      
      Hardware Connections:
@@ -37,7 +37,7 @@
 
     unsigned long lastChangeTime = 0;  // the last time the pas state was changed
     unsigned long dblClickTimeout = 1000;  // "double-click" timeout in ms, (double-click changes controller mode)
-    byte clickCount = 0;
+    byte clickCount = 1;
 
     unsigned long pulseDuration = 0;
     unsigned long pulseThreshold = 83333; // 400,000us = 400ms (for bench testing)
@@ -60,25 +60,14 @@
      
     void loop() {
 
-     //change controller mode if button double-clicked
-//     if (pasState != lastPasState){
-//
-//       if ((millis() - lastChangeTime) < dblClickTimeout){
-//        // change modes by bringing mode change momentarily low (if using monitor LED, LED briefly flashes)
-//         digitalWrite(controllerModeChangePin, LOW);
-//         delay(25);
-//         digitalWrite(controllerModeChangePin, HIGH);
-//       }
-//      lastChangeTime = millis();
-//      lastPasState = pasState;
-//     }
+     //change controller mode if button triple-clicked
 
         if (clickCount > 2){
         // change modes by bringing mode change momentarily low (if using monitor LED, LED briefly flashes)
          digitalWrite(controllerModeChangePin, LOW);
          delay(25);
          digitalWrite(controllerModeChangePin, HIGH);
-         clickCount = 0;
+         clickCount = 1;
        }
        
       // measure pulse durations from pas sensor to turn throttle on/off
@@ -118,7 +107,7 @@
 //         digitalWrite(controllerModeChangePin, HIGH);
        }
           else{
-            clickCount = 0;
+            clickCount = 1;
           }
       lastChangeTime = millis();
       lastPasState = pasState;
