@@ -1,7 +1,7 @@
 # qiroll-pedal-assist
 #### External pedal-assist system for Qiroll ebike kit, implemented with Arduino IDE on an ATTINY85 (Digispark clone) board
 
-So I got this Qiroll friction-drive ebike [kit](https://www.aliexpress.com/item/4000366510773.html) to put on my commuter bike. For the price and weight I think it's pretty good, delivering an 18-20mph cruise on flat ground with light pedaling and 20-30 miles of range (with the larger battery option, your mileage may vary).
+So I got this Qiroll friction-drive ebike [kit](https://www.aliexpress.com/item/4000366510773.html) to put on my commuter bike. For the price and weight I think it's pretty good, delivering an 18-20mph cruise on flat ground with light pedaling and 20-30 miles of range (with the larger battery option, your mileage may vary). *update: they're out with a new [pro](https://www.aliexpress.com/item/1005002066643128.html) [version](https://www.ebay.com/itm/Electric-Bicycle-E-BIKE-Conversion-Kit-QiROLL-Friction-Drive-QR-E-PRO-H70/402658347675) that's probably worth the extra cost if you're going to bother, more speed+range and suppposedly offers regen braking?*
 
 The lack of any sort of pedal assist bothered me, with the original design you have to hold down a switch to keep the motor on. (It's a simple switch, not a real throttle so the motor is either on or off. There is a way to select between a lower power mode and a higher power mode.)
 
