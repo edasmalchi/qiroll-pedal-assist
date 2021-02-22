@@ -96,17 +96,12 @@
     // button press interrupt handler
     void ISR_pasState() {
 
-      digitalWrite(controllerThrottlePin, LOW); // safety measure, will also alert if ISR continually tripped...
+      digitalWrite(controllerThrottlePin, HIGH); // safety measure, will also alert if ISR continually tripped...
       static unsigned long last_interrupt_time = 0;
       
       delay(125); // inelegant solution to noise/vibration issue? 
       if (digitalRead(buttonPin) == LOW){    // check if pin still low after 5ms delay (assuming genuine presses longer than 200ms?)
-          
-//          unsigned long interrupt_time = millis();
-         // If interrupts come faster than 125ms, assume it's a bounce and ignore
-         // tested with Qiroll included switch
-//         if (interrupt_time - last_interrupt_time > 125)
-//         {
+
             pasState = !pasState; //turn pas on/off
             
             if ((millis() - lastChangeTime) < dblClickTimeout){
@@ -117,8 +112,7 @@
             }
         lastChangeTime = millis();
         lastPasState = pasState;
-//         }
-//         last_interrupt_time = interrupt_time;
+
       }
       
       }
