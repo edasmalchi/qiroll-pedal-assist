@@ -10,7 +10,7 @@ This project aims to add pedal assist functionality to the Qiroll kit. It's curr
 #### Notes
 * The sensor I got reads in both directions, so it will trigger on backwards pedaling as well. I don't think this is a big deal, but there may be sensors out there that only read in one direction.
 * My attiny85 board and sensor both power just fine from the Qiroll micro-usb switch port +5v supply, parts with a higher power consumption may not which would require a more complex design.
-* _Use at your own risk!_ I reccomend extensive testing of whatever implementation you come up with, ensuring your brakes can stop the bike even if the motor sticks on, and having the battery cable within reach to disconnect if necessary!
+* ___Use at your own risk! I reccomend extensive testing of whatever implementation you come up with, ensuring your brakes can stop the bike even if the motor sticks on, and having the battery cable within reach to disconnect if necessary!___
 
 #### Progress
 * working version of Arduino code
