@@ -13,6 +13,7 @@ This project aims to add pedal assist functionality to the Qiroll kit. It's curr
 * ___Use at your own risk! I reccomend extensive testing of whatever implementation you come up with, ensuring your brakes can stop the bike even if the motor sticks on, and having the battery cable within reach to disconnect if necessary!___
 
 #### Progress
-* working version of Arduino code
-* breadboard mockup with sensor and placeholder LEDs for controller connections
-* _functional on-bike version_ with minor improvements still to come
+* working version of Arduino code (mine only crashes sometimes, refinements/wholesale rewrites welcome)
+* attiny85 board mounted to protoboard w/ connectors, on-bike and mostly working
+* breadboard prototype of seperate digital logic version tested with bike in trainer (no code so can't crash!)
+    * working on getting this onto protoboard...
