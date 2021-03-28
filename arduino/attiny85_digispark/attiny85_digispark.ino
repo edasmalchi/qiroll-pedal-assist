@@ -99,9 +99,9 @@
       digitalWrite(controllerThrottlePin, HIGH); // safety measure, will also alert if ISR continually tripped...
       static unsigned long last_interrupt_time = 0;
       
-      delay(125); // inelegant solution to noise/vibration issue? 
-      if (digitalRead(buttonPin) == LOW){    // check if pin still low after 5ms delay (assuming genuine presses longer than 200ms?)
-
+      delay(15); // added hardware RC debounce to mine, if you're relying on this for debounce try 75-125?
+      if (digitalRead(buttonPin) == LOW){    // check if pin still low after 5ms delay
+        
             pasState = !pasState; //turn pas on/off
             
             if ((millis() - lastChangeTime) < dblClickTimeout){
