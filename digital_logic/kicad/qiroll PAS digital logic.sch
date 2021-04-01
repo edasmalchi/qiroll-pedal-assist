@@ -51,7 +51,7 @@ L Device:R R1
 U 1 1 602C5D5E
 P 7650 2450
 F 0 "R1" H 7720 2496 50  0000 L CNN
-F 1 "392k" H 7720 2405 50  0000 L CNN
+F 1 "200k" H 7720 2405 50  0000 L CNN
 F 2 "" V 7580 2450 50  0001 C CNN
 F 3 "~" H 7650 2450 50  0001 C CNN
 	1    7650 2450
@@ -62,7 +62,7 @@ L Device:R R2
 U 1 1 602C92E7
 P 7650 3800
 F 0 "R2" H 7720 3846 50  0000 L CNN
-F 1 "392k" H 7720 3755 50  0000 L CNN
+F 1 "200k" H 7720 3755 50  0000 L CNN
 F 2 "" V 7580 3800 50  0001 C CNN
 F 3 "~" H 7650 3800 50  0001 C CNN
 	1    7650 3800
@@ -273,7 +273,7 @@ Qi_throttle
 Text GLabel 5900 1500 1    50   Input ~ 0
 Qi_mode
 Text GLabel 6300 1500 1    50   Input ~ 0
-Qi_+5v
+Batt_20-35v
 Text GLabel 6500 1500 1    50   Input ~ 0
 Qi_com
 $Comp
@@ -286,17 +286,6 @@ F 2 "" H 6500 1500 50  0001 C CNN
 F 3 "" H 6500 1500 50  0001 C CNN
 	1    6500 1500
 	1    0    0    -1  
-$EndComp
-$Comp
-L power:VDD #PWR?
-U 1 1 602BC0B1
-P 6300 1500
-F 0 "#PWR?" H 6300 1350 50  0001 C CNN
-F 1 "VDD" H 6315 1673 50  0000 C CNN
-F 2 "" H 6300 1500 50  0001 C CNN
-F 3 "" H 6300 1500 50  0001 C CNN
-	1    6300 1500
-	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	6000 2300 6100 2300
@@ -324,7 +313,7 @@ L Device:C C2
 U 1 1 602C4F87
 P 7500 3950
 F 0 "C2" V 7248 3950 50  0000 C CNN
-F 1 "0.47u" V 7339 3950 50  0000 C CNN
+F 1 "1u" V 7339 3950 50  0000 C CNN
 F 2 "" H 7538 3800 50  0001 C CNN
 F 3 "~" H 7500 3950 50  0001 C CNN
 	1    7500 3950
@@ -363,7 +352,7 @@ L Device:C C1
 U 1 1 602BEE37
 P 7500 2600
 F 0 "C1" V 7248 2600 50  0000 C CNN
-F 1 "0.47u" V 7339 2600 50  0000 C CNN
+F 1 "1u" V 7339 2600 50  0000 C CNN
 F 2 "" H 7538 2450 50  0001 C CNN
 F 3 "~" H 7500 2600 50  0001 C CNN
 	1    7500 2600
@@ -1006,4 +995,136 @@ F 3 "" H 7100 5150 50  0001 C CNN
 	1    7100 5150
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	6300 1500 6300 1750
+Wire Wire Line
+	6300 1750 7850 1750
+$Comp
+L power:VDD #PWR?
+U 1 1 6063EB88
+P 9000 1750
+F 0 "#PWR?" H 9000 1600 50  0001 C CNN
+F 1 "VDD" V 9015 1878 50  0000 L CNN
+F 2 "" H 9000 1750 50  0001 C CNN
+F 3 "" H 9000 1750 50  0001 C CNN
+	1    9000 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 606431FB
+P 8900 1900
+F 0 "C7" H 9015 1946 50  0000 L CNN
+F 1 "0.1u" H 9015 1855 50  0000 L CNN
+F 2 "" H 8938 1750 50  0001 C CNN
+F 3 "~" H 8900 1900 50  0001 C CNN
+	1    8900 1900
+	1    0    0    -1  
+$EndComp
+Connection ~ 8900 1750
+Wire Wire Line
+	8900 1750 9000 1750
+$Comp
+L Device:C C6
+U 1 1 60646E8A
+P 7850 1900
+F 0 "C6" H 7965 1946 50  0000 L CNN
+F 1 "0.47u" H 7965 1855 50  0000 L CNN
+F 2 "" H 7888 1750 50  0001 C CNN
+F 3 "~" H 7850 1900 50  0001 C CNN
+	1    7850 1900
+	1    0    0    -1  
+$EndComp
+Connection ~ 7850 1750
+Wire Notes Line
+	7300 2250 7300 4950
+Wire Notes Line
+	7300 4950 9900 4950
+Wire Notes Line
+	9900 4950 9900 2250
+Wire Notes Line
+	9900 2250 7300 2250
+Wire Notes Line
+	7750 1150 7750 2150
+Wire Notes Line
+	7750 2150 9350 2150
+Wire Notes Line
+	9350 2150 9350 1150
+Wire Notes Line
+	9350 1150 7750 1150
+Wire Notes Line
+	4500 2150 4500 3150
+Wire Notes Line
+	4500 3150 6800 3150
+Wire Notes Line
+	6800 3150 6800 2150
+Wire Notes Line
+	6800 2150 4500 2150
+Wire Notes Line
+	4500 3250 6800 3250
+Wire Notes Line
+	6800 3250 6800 4400
+Wire Notes Line
+	6800 4400 4500 4400
+Wire Notes Line
+	4500 4400 4500 3250
+Wire Notes Line
+	4300 1250 4300 3100
+Wire Notes Line
+	4300 3100 2650 3100
+Wire Notes Line
+	2650 3100 2650 1250
+Wire Notes Line
+	2650 1250 4300 1250
+Wire Notes Line
+	2400 3250 2400 4500
+Wire Notes Line
+	2400 4500 4350 4500
+Wire Notes Line
+	4350 4500 4350 3250
+Wire Notes Line
+	4350 3250 2400 3250
+Text Notes 7800 5050 0    50   ~ 0
+PAS cadence sense/steady output
+Text Notes 7750 1100 0    50   ~ 0
+linear regulator (battery approx. 25v or 35v to 5v)
+Text Notes 4500 2100 0    50   ~ 0
+PAS on/off FF, motor on/off output stage
+Text Notes 4500 4500 0    50   ~ 0
+regen on/off FF, reset on pedaling
+Text Notes 2650 1200 0    50   ~ 0
+button debounce/clean pulse
+Text Notes 2400 4600 0    50   ~ 0
+double-click timer
+$Comp
+L Regulator_Linear:L7805 U5
+U 1 1 6066B66B
+P 8400 1750
+F 0 "U5" H 8400 1992 50  0000 C CNN
+F 1 "L7805" H 8400 1901 50  0000 C CNN
+F 2 "" H 8425 1600 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 8400 1700 50  0001 C CNN
+	1    8400 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 1750 8100 1750
+Wire Wire Line
+	8700 1750 8900 1750
+$Comp
+L power:GND #PWR?
+U 1 1 60683075
+P 8400 2050
+F 0 "#PWR?" H 8400 1800 50  0001 C CNN
+F 1 "GND" H 8405 1877 50  0000 C CNN
+F 2 "" H 8400 2050 50  0001 C CNN
+F 3 "" H 8400 2050 50  0001 C CNN
+	1    8400 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 2050 8400 2050
+Connection ~ 8400 2050
+Wire Wire Line
+	8400 2050 8900 2050
 $EndSCHEMATC

@@ -22,7 +22,9 @@
       - P3 used for PAS status led, but could be used instead for addition of brake sensor
 
     */
-     
+    // include power library
+    #include <avr/power.h>
+    
     // set pin numbers:
     const byte buttonPin = 2;   // pushbutton pin (with extenal pullup resistor)
     const byte pasSensorPin = 0; // pas hall sensor input pin
@@ -45,6 +47,8 @@
 
 
     void setup() {
+      //clock_prescale_set(clock_div_8);
+      
       pinMode(buttonPin, INPUT_PULLUP);
       digitalWrite(buttonPin, HIGH); //enable internal pullup
       //interrupt 0 is P2(buttonPin), at least on attiny85 digispark/clones
