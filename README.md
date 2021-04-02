@@ -10,7 +10,7 @@ This project aims to add pedal assist functionality to the Qiroll kit. It's curr
 Because I was having fun with the electronics hobby, I also designed a version that uses a handful of cmos digital logic ICs to do the same thing. It's mostly ready-- will probably be bigger than the digispark when it's all built but uses less power and perhaps more reliable.
 
 #### Hardware Mods
-* Since both my designs need only one button, with single-clicks turing pedal assist on/off and double-clicks switching controller modes (and/or enabling regen), I didn't need the second button in the original Qiroll switch. So I desoldered it, and used the space/wiring for a resistor and an led that lines up nicely with the hole left by taking the button out, letting me see if pedal assist is currently on or off!
+* Since both my designs need only one button, with single-clicks turning pedal assist on/off and double-clicks switching controller modes (and/or enabling regen), I didn't need the second button in the original Qiroll switch. So I desoldered it, and used the space/wiring for a resistor and an led that lines up nicely with the hole left by taking the button out, letting me see if pedal assist is currently on or off!
 * Stripped the insulation and soldered into one of the battery wires to tap power-- should be fine since the pedal assist system uses very little current but be careful not to damage the battery wire itself. Alternatively you could get some of those Amass connectors it uses and make an adaptor.
 
 #### Notes
