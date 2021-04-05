@@ -9,6 +9,6 @@ Built from some 4000-series CMOS chips, this design also implements pedal assist
     * the NAND gate wired as an inverter at U2C and connected to the flip-flop reset input is designed to turn off regen when pedaling resumes on the pro kit...
 * Extremely fast double-clicks won't register. But it's easy enough to get a feel for it.
 * C1\*R1 and C2\*R2 should be equivalent, but can be changed to adjust the cadence threshold.   
-    * following what I have in the schematic yields a cadence threshold of about 70rpm with a 12-magnet PAS sensor
+    * following what I have in the schematic yields a cadence threshold of about 60rpm with a 12-magnet PAS sensor
     * higher values (longer RC time constant) will lower the cadence threshold (PAS activates without having to spin the pedals as fast)
     * lower values (shorter RC time constant) will raise the cadence threshold (PAS won't activate until spinning the pedals faster)
