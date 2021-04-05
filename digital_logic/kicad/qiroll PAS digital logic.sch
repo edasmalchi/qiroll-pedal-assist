@@ -570,24 +570,24 @@ Wire Wire Line
 $Comp
 L 4xxx:4023 U2
 U 2 1 6032F0EA
-P 6300 3400
-F 0 "U2" H 6300 3725 50  0000 C CNN
-F 1 "4023" H 6300 3634 50  0000 C CNN
-F 2 "" H 6300 3400 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 6300 3400 50  0001 C CNN
-	2    6300 3400
-	1    0    0    -1  
+P 6300 4050
+F 0 "U2" H 6300 4375 50  0000 C CNN
+F 1 "4023" H 6300 4284 50  0000 C CNN
+F 2 "" H 6300 4050 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 6300 4050 50  0001 C CNN
+	2    6300 4050
+	-1   0    0    1   
 $EndComp
 $Comp
 L 4xxx:4023 U2
 U 3 1 6033216D
-P 6300 4050
-F 0 "U2" H 6300 3733 50  0000 C CNN
-F 1 "4023" H 6300 3824 50  0000 C CNN
-F 2 "" H 6300 4050 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 6300 4050 50  0001 C CNN
-	3    6300 4050
-	-1   0    0    1   
+P 6300 3400
+F 0 "U2" H 6300 3083 50  0000 C CNN
+F 1 "4023" H 6300 3174 50  0000 C CNN
+F 2 "" H 6300 3400 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 6300 3400 50  0001 C CNN
+	3    6300 3400
+	1    0    0    -1  
 $EndComp
 $Comp
 L 4xxx:4023 U2
@@ -716,28 +716,6 @@ Wire Wire Line
 	4250 2800 4250 3300
 Wire Wire Line
 	4250 3300 3050 3300
-$Comp
-L power:GND #PWR?
-U 1 1 60371511
-P 3250 3950
-F 0 "#PWR?" H 3250 3700 50  0001 C CNN
-F 1 "GND" V 3255 3822 50  0000 R CNN
-F 2 "" H 3250 3950 50  0001 C CNN
-F 3 "" H 3250 3950 50  0001 C CNN
-	1    3250 3950
-	0    1    1    0   
-$EndComp
-$Comp
-L power:VDD #PWR?
-U 1 1 603728C0
-P 3250 2600
-F 0 "#PWR?" H 3250 2450 50  0001 C CNN
-F 1 "VDD" V 3265 2727 50  0000 L CNN
-F 2 "" H 3250 2600 50  0001 C CNN
-F 3 "" H 3250 2600 50  0001 C CNN
-	1    3250 2600
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	2850 1800 2850 2700
 Wire Wire Line
@@ -777,7 +755,7 @@ L Device:R R5
 U 1 1 6038DA08
 P 3250 2100
 F 0 "R5" H 3320 2146 50  0000 L CNN
-F 1 "150k" H 3320 2055 50  0000 L CNN
+F 1 "100k" H 3320 2055 50  0000 L CNN
 F 2 "" V 3180 2100 50  0001 C CNN
 F 3 "~" H 3250 2100 50  0001 C CNN
 	1    3250 2100
@@ -1127,4 +1105,26 @@ Wire Wire Line
 Connection ~ 8400 2050
 Wire Wire Line
 	8400 2050 8900 2050
+$Comp
+L power:VDD #PWR?
+U 1 1 606C0841
+P 3250 3950
+F 0 "#PWR?" H 3250 3800 50  0001 C CNN
+F 1 "VDD" V 3265 4077 50  0000 L CNN
+F 2 "" H 3250 3950 50  0001 C CNN
+F 3 "" H 3250 3950 50  0001 C CNN
+	1    3250 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 606CBEF8
+P 3250 2600
+F 0 "#PWR?" H 3250 2350 50  0001 C CNN
+F 1 "GND" V 3255 2472 50  0000 R CNN
+F 2 "" H 3250 2600 50  0001 C CNN
+F 3 "" H 3250 2600 50  0001 C CNN
+	1    3250 2600
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
