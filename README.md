@@ -16,6 +16,7 @@ Because I was having fun with the electronics hobby, I also designed a version t
 #### Notes
 * The sensor I got reads in both directions, so it will trigger on backwards pedaling as well. I don't think this is a big deal, but there may be sensors out there that only read in one direction.
 * After much investigation, the power from the Qiroll micro-usb switch port seems to fluctuate quite a bit. So the reliable thing to do is tap into the + side of the battery, using a voltage regulator (or buck converter) to drop down the battery voltage.
+    * Arduino version currently runs my 7805 voltage regulator rather hot, but heat is no issue with the digital logic version
 * ___Use at your own risk! I reccomend extensive testing of whatever implementation you come up with, ensuring your brakes can stop the bike even if the motor sticks on, and having the battery cable within reach to disconnect if necessary!___
 
 #### Progress
