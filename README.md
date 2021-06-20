@@ -23,3 +23,4 @@ Because I was having fun with the electronics hobby, I also designed a version t
 * working version of Arduino code (working on rewrite to lower power consumption)
 * attiny85 board mounted to protoboard w/ connectors, on-bike and working well (currently consuming about 60ma, runs the 7805 rather hot!)
 * cmos digital logic version built on protoboard, on-bike and in testing (larger than attiny85 board, but stays cool and can't crash)
+* working on smaller digital logic with better regen handling, custom pcb
