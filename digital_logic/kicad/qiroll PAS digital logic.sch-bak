@@ -1226,4 +1226,12 @@ $EndComp
 Connection ~ 6300 1850
 Wire Wire Line
 	6300 1850 6250 1850
+Text Notes 5200 1300 1    50   ~ 0
+LED
+Text Notes 5300 1300 1    50   ~ 0
+Button
+Text Notes 5950 1300 1    50   ~ 0
+Regen/Mode (low=on)
+Text Notes 6050 1300 1    50   ~ 0
+Motor (low=on)
 $EndSCHEMATC
