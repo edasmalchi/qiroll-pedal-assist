@@ -19,7 +19,7 @@ U 2 1 602B3E9A
 P 5050 3700
 F 0 "U3" H 5050 4181 50  0000 C CNN
 F 1 "4027" H 5050 4090 50  0000 C CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 5050 3700 50  0001 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 5050 3700 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4027bms.pdf" H 5050 3700 50  0001 C CNN
 	2    5050 3700
 	1    0    0    -1  
@@ -30,7 +30,7 @@ U 1 1 602BC740
 P 3750 2600
 F 0 "U4" H 3750 3067 50  0000 C CNN
 F 1 "14538" H 3750 2976 50  0000 C CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 3750 2600 50  0001 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 3750 2600 50  0001 C CNN
 F 3 "https://www.onsemi.com/pub/Collateral/MC14538B-D.PDF" H 3750 2600 50  0001 C CNN
 	1    3750 2600
 	1    0    0    -1  
@@ -41,7 +41,7 @@ U 2 1 602BC746
 P 3750 3850
 F 0 "U4" H 3750 4317 50  0000 C CNN
 F 1 "14538" H 3750 4226 50  0000 C CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 3750 3850 50  0001 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 3750 3850 50  0001 C CNN
 F 3 "https://www.onsemi.com/pub/Collateral/MC14538B-D.PDF" H 3750 3850 50  0001 C CNN
 	2    3750 3850
 	1    0    0    -1  
@@ -88,28 +88,6 @@ F 1 "GND" H 8405 4577 50  0000 C CNN
 F 2 "" H 8400 4750 50  0001 C CNN
 F 3 "" H 8400 4750 50  0001 C CNN
 	1    8400 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L 4xxx:14538 U1
-U 1 1 6029DE32
-P 8400 2800
-F 0 "U1" H 8400 3267 50  0000 C CNN
-F 1 "14538" H 8400 3176 50  0000 C CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 8400 2800 50  0001 C CNN
-F 3 "https://www.onsemi.com/pub/Collateral/MC14538B-D.PDF" H 8400 2800 50  0001 C CNN
-	1    8400 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L 4xxx:14538 U1
-U 2 1 602A2F9B
-P 8400 4150
-F 0 "U1" H 8400 4617 50  0000 C CNN
-F 1 "14538" H 8400 4526 50  0000 C CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 8400 4150 50  0001 C CNN
-F 3 "https://www.onsemi.com/pub/Collateral/MC14538B-D.PDF" H 8400 4150 50  0001 C CNN
-	2    8400 4150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -230,17 +208,6 @@ F 3 "" H 7900 4450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L 4xxx:14538 U1
-U 3 1 602B331E
-P 9300 4200
-F 0 "U1" H 9300 4667 50  0000 C CNN
-F 1 "14538" H 9300 4576 50  0000 C CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 9300 4200 50  0001 C CNN
-F 3 "https://www.onsemi.com/pub/Collateral/MC14538B-D.PDF" H 9300 4200 50  0001 C CNN
-	3    9300 4200
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:VDD #PWR0114
 U 1 1 602B6AD2
 P 9300 4700
@@ -265,29 +232,20 @@ $EndComp
 $Comp
 L power:GND #PWR0116
 U 1 1 602BB542
-P 6600 1850
-F 0 "#PWR0116" H 6600 1600 50  0001 C CNN
-F 1 "GND" H 6605 1677 50  0000 C CNN
-F 2 "" H 6600 1850 50  0001 C CNN
-F 3 "" H 6600 1850 50  0001 C CNN
-	1    6600 1850
-	1    0    0    -1  
+P 6250 1650
+F 0 "#PWR0116" H 6250 1400 50  0001 C CNN
+F 1 "GND" H 6255 1477 50  0000 C CNN
+F 2 "" H 6250 1650 50  0001 C CNN
+F 3 "" H 6250 1650 50  0001 C CNN
+	1    6250 1650
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	8900 2700 9000 2700
 Wire Wire Line
-	9000 2700 9000 3300
-Wire Wire Line
-	6700 3300 6700 2750
-Wire Wire Line
-	8900 4050 8900 3350
-Wire Wire Line
 	7650 3950 7900 3950
-Connection ~ 7150 2800
 Connection ~ 7650 3950
 Connection ~ 7650 2600
-Wire Wire Line
-	7150 2800 7150 4250
 Wire Wire Line
 	7150 2000 7150 2800
 $Comp
@@ -297,7 +255,7 @@ P 7500 3950
 F 0 "C2" V 7248 3950 50  0000 C CNN
 F 1 "1u" V 7339 3950 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7538 3800 50  0001 C CNN
-F 3 "~" H 7500 3950 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/tdk-corporation/C1608X7R1C105K080AC/634399" H 7500 3950 50  0001 C CNN
 	1    7500 3950
 	0    1    1    0   
 $EndComp
@@ -312,12 +270,6 @@ F 3 "" H 7350 3950 50  0001 C CNN
 	1    7350 3950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7150 4250 7900 4250
-Wire Wire Line
-	9000 3300 6700 3300
-Wire Wire Line
-	7150 2800 7900 2800
 $Comp
 L power:GND #PWR0101
 U 1 1 602CB30F
@@ -336,25 +288,17 @@ P 7500 2600
 F 0 "C1" V 7248 2600 50  0000 C CNN
 F 1 "1u" V 7339 2600 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7538 2450 50  0001 C CNN
-F 3 "~" H 7500 2600 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/tdk-corporation/C1608X7R1C105K080AC/634399" H 7500 2600 50  0001 C CNN
 	1    7500 2600
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8900 3350 6650 3350
-Wire Wire Line
-	6700 2750 6600 2750
-Wire Wire Line
-	6600 2350 6600 2650
-Wire Wire Line
-	5750 2350 6600 2350
 $Comp
 L 4xxx:4027 U3
 U 3 1 602D3C3D
 P 3800 5250
 F 0 "U3" H 3570 5204 50  0000 R CNN
 F 1 "4027" H 3570 5295 50  0000 R CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 3800 5250 50  0001 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 3800 5250 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4027bms.pdf" H 3800 5250 50  0001 C CNN
 	3    3800 5250
 	-1   0    0    1   
@@ -365,7 +309,7 @@ U 3 1 602D5915
 P 2450 5300
 F 0 "U4" H 2220 5254 50  0000 R CNN
 F 1 "14538" H 2220 5345 50  0000 R CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 2450 5300 50  0001 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 2450 5300 50  0001 C CNN
 F 3 "https://www.onsemi.com/pub/Collateral/MC14538B-D.PDF" H 2450 5300 50  0001 C CNN
 	3    2450 5300
 	-1   0    0    1   
@@ -389,7 +333,7 @@ U 1 1 602B305C
 P 5050 2800
 F 0 "U3" H 5050 3281 50  0000 C CNN
 F 1 "4027" H 5050 3190 50  0000 C CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 5050 2800 50  0001 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 5050 2800 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4027bms.pdf" H 5050 2800 50  0001 C CNN
 	1    5050 2800
 	1    0    0    -1  
@@ -454,17 +398,6 @@ F 3 "" H 3800 4850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0122
-U 1 1 602E87FF
-P 5050 3400
-F 0 "#PWR0122" H 5050 3150 50  0001 C CNN
-F 1 "GND" V 5055 3272 50  0000 R CNN
-F 2 "" H 5050 3400 50  0001 C CNN
-F 3 "" H 5050 3400 50  0001 C CNN
-	1    5050 3400
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:VDD #PWR0123
 U 1 1 602E9202
 P 3800 5650
@@ -519,33 +452,24 @@ F 3 "" H 3750 3200 50  0001 C CNN
 	1    3750 3200
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5750 2350 5750 1950
-Connection ~ 5750 2350
 $Comp
 L 4xxx:4023 U2
 U 1 1 603229CF
 P 6300 2750
 F 0 "U2" H 6300 2433 50  0000 C CNN
 F 1 "4023" H 6300 2524 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6300 2750 50  0001 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6300 2750 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 6300 2750 50  0001 C CNN
 	1    6300 2750
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	6000 2750 6000 2300
-Wire Wire Line
-	6650 2850 6600 2850
-Wire Wire Line
-	6650 2850 6650 3350
 $Comp
 L 4xxx:4023 U2
 U 2 1 6032F0EA
 P 6300 4050
 F 0 "U2" H 6300 4375 50  0000 C CNN
 F 1 "4023" H 6300 4284 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6300 4050 50  0001 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6300 4050 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 6300 4050 50  0001 C CNN
 	2    6300 4050
 	-1   0    0    1   
@@ -556,7 +480,7 @@ U 3 1 6033216D
 P 6300 3400
 F 0 "U2" H 6300 3083 50  0000 C CNN
 F 1 "4023" H 6300 3174 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6300 3400 50  0001 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6300 3400 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 6300 3400 50  0001 C CNN
 	3    6300 3400
 	1    0    0    -1  
@@ -567,7 +491,7 @@ U 4 1 6033906C
 P 6350 5100
 F 0 "U2" H 6120 5054 50  0000 R CNN
 F 1 "4023" H 6120 5145 50  0000 R CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6350 5100 50  0001 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6350 5100 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 6350 5100 50  0001 C CNN
 	4    6350 5100
 	-1   0    0    1   
@@ -606,27 +530,6 @@ Wire Wire Line
 	5950 3500 5950 3400
 Connection ~ 5950 3400
 Wire Wire Line
-	5950 3400 5900 3400
-Wire Wire Line
-	5900 3400 5900 2750
-Wire Wire Line
-	5900 2750 6000 2750
-Connection ~ 6000 2750
-Wire Wire Line
-	5750 2350 5750 2700
-Wire Wire Line
-	5350 2700 5750 2700
-Wire Wire Line
-	6600 3400 6600 3650
-Wire Wire Line
-	6600 3650 5800 3650
-Wire Wire Line
-	5800 3650 5800 4000
-Wire Wire Line
-	5800 4000 5050 4000
-Wire Wire Line
-	5600 1800 5600 3800
-Wire Wire Line
 	5600 3800 5350 3800
 Wire Wire Line
 	6600 4050 6650 4050
@@ -654,8 +557,6 @@ Wire Wire Line
 	6800 4300 6800 3950
 Wire Wire Line
 	6800 3950 6600 3950
-Wire Wire Line
-	6000 4050 4650 4050
 Wire Wire Line
 	4650 4050 4650 3700
 Wire Wire Line
@@ -747,8 +648,8 @@ U 1 1 6038DA16
 P 3100 2250
 F 0 "C3" V 2848 2250 50  0000 C CNN
 F 1 "0.47u" V 2939 2250 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 3138 2100 50  0001 C CNN
-F 3 "~" H 3100 2250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3138 2100 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/tdk-corporation/CGA3E2X5R1A474M080AA/3949673" H 3100 2250 50  0001 C CNN
 	1    3100 2250
 	0    1    1    0   
 $EndComp
@@ -781,8 +682,8 @@ U 1 1 60394152
 P 2600 3650
 F 0 "C4" V 2348 3650 50  0000 C CNN
 F 1 "1u" V 2439 3650 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 2638 3500 50  0001 C CNN
-F 3 "~" H 2600 3650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2638 3500 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/tdk-corporation/C1608X7R1C105K080AC/634399" H 2600 3650 50  0001 C CNN
 	1    2600 3650
 	0    1    1    0   
 $EndComp
@@ -851,8 +752,8 @@ U 1 1 6061DDAE
 P 3700 1650
 F 0 "C5" H 3815 1696 50  0000 L CNN
 F 1 "1u" H 3815 1605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 3738 1500 50  0001 C CNN
-F 3 "~" H 3700 1650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3738 1500 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/tdk-corporation/C1608X7R1C105K080AC/634399" H 3700 1650 50  0001 C CNN
 	1    3700 1650
 	1    0    0    -1  
 $EndComp
@@ -874,13 +775,13 @@ F 3 "" H 3700 1500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C10
+L Device:C C12
 U 1 1 6062C108
 P 3150 5200
-F 0 "C10" H 3265 5246 50  0000 L CNN
+F 0 "C12" H 3265 5246 50  0000 L CNN
 F 1 ".1u" H 3265 5155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3188 5050 50  0001 C CNN
-F 3 "~" H 3150 5200 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/taiyo-yuden/EMK107BJ104KAHT/4157318 " H 3150 5200 50  0001 C CNN
 	1    3150 5200
 	1    0    0    -1  
 $EndComp
@@ -907,36 +808,36 @@ F 3 "" H 3150 5350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C11
+L Device:C C13
 U 1 1 6062E968
-P 7100 5000
-F 0 "C11" H 7215 5046 50  0000 L CNN
-F 1 ".1u" H 7215 4955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7138 4850 50  0001 C CNN
-F 3 "~" H 7100 5000 50  0001 C CNN
-	1    7100 5000
+P 7000 5000
+F 0 "C13" H 7115 5046 50  0000 L CNN
+F 1 ".1u" H 7115 4955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7038 4850 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/taiyo-yuden/EMK107BJ104KAHT/4157318 " H 7000 5000 50  0001 C CNN
+	1    7000 5000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0141
 U 1 1 6062E96E
-P 7100 4850
-F 0 "#PWR0141" H 7100 4600 50  0001 C CNN
-F 1 "GND" H 7105 4677 50  0000 C CNN
-F 2 "" H 7100 4850 50  0001 C CNN
-F 3 "" H 7100 4850 50  0001 C CNN
-	1    7100 4850
+P 7000 4850
+F 0 "#PWR0141" H 7000 4600 50  0001 C CNN
+F 1 "GND" H 7005 4677 50  0000 C CNN
+F 2 "" H 7000 4850 50  0001 C CNN
+F 3 "" H 7000 4850 50  0001 C CNN
+	1    7000 4850
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:VDD #PWR0142
 U 1 1 6062E974
-P 7100 5150
-F 0 "#PWR0142" H 7100 5000 50  0001 C CNN
-F 1 "VDD" H 7115 5323 50  0000 C CNN
-F 2 "" H 7100 5150 50  0001 C CNN
-F 3 "" H 7100 5150 50  0001 C CNN
-	1    7100 5150
+P 7000 5150
+F 0 "#PWR0142" H 7000 5000 50  0001 C CNN
+F 1 "VDD" H 7015 5323 50  0000 C CNN
+F 2 "" H 7000 5150 50  0001 C CNN
+F 3 "" H 7000 5150 50  0001 C CNN
+	1    7000 5150
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -955,9 +856,9 @@ L Device:C C7
 U 1 1 606431FB
 P 8900 1900
 F 0 "C7" H 9015 1946 50  0000 L CNN
-F 1 "0.1u" H 9015 1855 50  0000 L CNN
+F 1 ".1u" H 9015 1855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8938 1750 50  0001 C CNN
-F 3 "~" H 8900 1900 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/taiyo-yuden/EMK107BJ104KAHT/4157318 " H 8900 1900 50  0001 C CNN
 	1    8900 1900
 	1    0    0    -1  
 $EndComp
@@ -971,7 +872,7 @@ P 7850 1900
 F 0 "C6" H 7965 1946 50  0000 L CNN
 F 1 "0.47u" H 7965 1855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7888 1750 50  0001 C CNN
-F 3 "~" H 7850 1900 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/tdk-corporation/CGA3E2X5R1A474M080AA/3949673" H 7850 1900 50  0001 C CNN
 	1    7850 1900
 	1    0    0    -1  
 $EndComp
@@ -1064,7 +965,7 @@ Wire Wire Line
 	7850 2050 8400 2050
 Connection ~ 8400 2050
 Wire Wire Line
-	8400 2050 8900 2050
+	8400 2050 8700 2050
 $Comp
 L power:VDD #PWR0145
 U 1 1 606C0841
@@ -1094,7 +995,7 @@ P 7850 1600
 F 0 "C8" H 7735 1554 50  0000 R CNN
 F 1 "150u" H 7735 1645 50  0000 R CNN
 F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 7850 1600 50  0001 C CNN
-F 3 "~" H 7850 1600 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/nichicon/UPW1H151MPD/589643" H 7850 1600 50  0001 C CNN
 	1    7850 1600
 	-1   0    0    1   
 $EndComp
@@ -1103,9 +1004,9 @@ L Device:CP1 C9
 U 1 1 607530FB
 P 8900 1600
 F 0 "C9" H 8785 1554 50  0000 R CNN
-F 1 "150u" H 8785 1645 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 8900 1600 50  0001 C CNN
-F 3 "~" H 8900 1600 50  0001 C CNN
+F 1 "200u" H 8785 1645 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 8900 1600 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/rubycon/8AX200MEFC6-3X7/4842280" H 8900 1600 50  0001 C CNN
 	1    8900 1600
 	-1   0    0    1   
 $EndComp
@@ -1133,7 +1034,6 @@ F 3 "" H 8900 1450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4300 1800 5300 1800
-NoConn ~ 5350 2900
 NoConn ~ 4250 4050
 NoConn ~ 8900 3000
 NoConn ~ 8900 4350
@@ -1148,38 +1048,26 @@ F 3 "~" H 5300 1300 50  0001 C CNN
 	1    5300 1300
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5750 1950 5200 1950
-Wire Wire Line
-	5200 1950 5200 1500
 $Comp
 L Connector:Conn_01x04_Male J2
 U 1 1 6076A04C
 P 6150 1300
 F 0 "J2" V 6212 1444 50  0000 L CNN
 F 1 "mode_thr_batt" V 6303 1444 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 6150 1300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6150 1300 50  0001 C CNN
 F 3 "~" H 6150 1300 50  0001 C CNN
 	1    6150 1300
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	6150 1750 6150 1500
-Wire Wire Line
-	6050 2300 6050 1500
-Wire Wire Line
-	6050 2300 6000 2300
-Wire Wire Line
-	5950 1800 5950 1500
-Wire Wire Line
-	5600 1800 5950 1800
 $Comp
 L Connector:Conn_01x03_Male J3
 U 1 1 60793E6D
 P 7050 1300
 F 0 "J3" V 7112 1444 50  0000 L CNN
 F 1 "pas_sense" V 7203 1444 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 7050 1300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7050 1300 50  0001 C CNN
 F 3 "~" H 7050 1300 50  0001 C CNN
 	1    7050 1300
 	0    1    1    0   
@@ -1189,41 +1077,29 @@ Wire Wire Line
 Wire Wire Line
 	7150 1550 7150 1500
 Wire Wire Line
-	6150 1750 6600 1750
-Wire Wire Line
-	7850 1750 8100 1750
+	7850 1750 8000 1750
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 607B336A
-P 6600 1750
-F 0 "#FLG0101" H 6600 1825 50  0001 C CNN
-F 1 "PWR_FLAG" H 6600 1923 50  0000 C CNN
-F 2 "" H 6600 1750 50  0001 C CNN
-F 3 "~" H 6600 1750 50  0001 C CNN
-	1    6600 1750
-	1    0    0    -1  
+P 8000 1750
+F 0 "#FLG0101" H 8000 1825 50  0001 C CNN
+F 1 "PWR_FLAG" H 8000 1923 50  0000 C CNN
+F 2 "" H 8000 1750 50  0001 C CNN
+F 3 "~" H 8000 1750 50  0001 C CNN
+	1    8000 1750
+	0    1    1    0   
 $EndComp
-Connection ~ 6600 1750
-Wire Wire Line
-	6600 1750 7850 1750
-Wire Wire Line
-	6600 1850 6300 1850
-Wire Wire Line
-	6250 1850 6250 1500
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 607B82D4
-P 6300 1850
-F 0 "#FLG0102" H 6300 1925 50  0001 C CNN
-F 1 "PWR_FLAG" H 6300 2023 50  0000 C CNN
-F 2 "" H 6300 1850 50  0001 C CNN
-F 3 "~" H 6300 1850 50  0001 C CNN
-	1    6300 1850
+P 8700 2050
+F 0 "#FLG0102" H 8700 2125 50  0001 C CNN
+F 1 "PWR_FLAG" H 8700 2223 50  0000 C CNN
+F 2 "" H 8700 2050 50  0001 C CNN
+F 3 "~" H 8700 2050 50  0001 C CNN
+	1    8700 2050
 	-1   0    0    1   
 $EndComp
-Connection ~ 6300 1850
-Wire Wire Line
-	6300 1850 6250 1850
 Text Notes 5200 1300 1    50   ~ 0
 LED
 Text Notes 5300 1300 1    50   ~ 0
@@ -1233,23 +1109,23 @@ Regen/Mode (low=on)
 Text Notes 6050 1300 1    50   ~ 0
 Motor (low=on)
 $Comp
-L 4xxx:4047 U?
+L 4xxx:4047 U7
 U 1 1 60D8EF3E
 P 4700 5850
-F 0 "U?" H 4700 4569 50  0000 C CNN
+F 0 "U7" H 4700 4569 50  0000 C CNN
 F 1 "4047" H 4700 4660 50  0000 C CNN
-F 2 "" H 4700 5850 50  0001 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4700 5850 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/cd4047b.pdf" H 4700 5850 50  0001 C CNN
 	1    4700 5850
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R8
 U 1 1 60D967D8
 P 5650 5300
-F 0 "R?" H 5720 5346 50  0000 L CNN
+F 0 "R8" H 5720 5346 50  0000 L CNN
 F 1 "100k" H 5720 5255 50  0000 L CNN
-F 2 "" V 5580 5300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5580 5300 50  0001 C CNN
 F 3 "~" H 5650 5300 50  0001 C CNN
 	1    5650 5300
 	1    0    0    -1  
@@ -1261,13 +1137,13 @@ Wire Wire Line
 Wire Wire Line
 	5650 5550 5300 5550
 $Comp
-L Device:C C?
+L Device:C C10
 U 1 1 60DA161C
 P 5350 4950
-F 0 "C?" V 5098 4950 50  0000 C CNN
+F 0 "C10" V 5098 4950 50  0000 C CNN
 F 1 "0.47u" V 5189 4950 50  0000 C CNN
-F 2 "" H 5388 4800 50  0001 C CNN
-F 3 "~" H 5350 4950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5388 4800 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/tdk-corporation/CGA3E2X5R1A474M080AA/3949673" H 5350 4950 50  0001 C CNN
 	1    5350 4950
 	0    1    1    0   
 $EndComp
@@ -1283,10 +1159,10 @@ Wire Wire Line
 Wire Wire Line
 	5500 5350 5300 5350
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0122
 U 1 1 60DAADCB
 P 4700 4750
-F 0 "#PWR?" H 4700 4500 50  0001 C CNN
+F 0 "#PWR0122" H 4700 4500 50  0001 C CNN
 F 1 "GND" V 4705 4622 50  0000 R CNN
 F 2 "" H 4700 4750 50  0001 C CNN
 F 3 "" H 4700 4750 50  0001 C CNN
@@ -1294,10 +1170,10 @@ F 3 "" H 4700 4750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:VDD #PWR?
+L power:VDD #PWR0149
 U 1 1 60DABB39
 P 4700 6950
-F 0 "#PWR?" H 4700 6800 50  0001 C CNN
+F 0 "#PWR0149" H 4700 6800 50  0001 C CNN
 F 1 "VDD" V 4715 7078 50  0000 L CNN
 F 2 "" H 4700 6950 50  0001 C CNN
 F 3 "" H 4700 6950 50  0001 C CNN
@@ -1305,10 +1181,10 @@ F 3 "" H 4700 6950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:VDD #PWR?
+L power:VDD #PWR0150
 U 1 1 60DAC8D3
 P 5300 6450
-F 0 "#PWR?" H 5300 6300 50  0001 C CNN
+F 0 "#PWR0150" H 5300 6300 50  0001 C CNN
 F 1 "VDD" V 5315 6578 50  0000 L CNN
 F 2 "" H 5300 6450 50  0001 C CNN
 F 3 "" H 5300 6450 50  0001 C CNN
@@ -1316,10 +1192,10 @@ F 3 "" H 5300 6450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:VDD #PWR?
+L power:VDD #PWR0151
 U 1 1 60DAD683
 P 5300 6250
-F 0 "#PWR?" H 5300 6100 50  0001 C CNN
+F 0 "#PWR0151" H 5300 6100 50  0001 C CNN
 F 1 "VDD" V 5315 6378 50  0000 L CNN
 F 2 "" H 5300 6250 50  0001 C CNN
 F 3 "" H 5300 6250 50  0001 C CNN
@@ -1327,10 +1203,10 @@ F 3 "" H 5300 6250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0152
 U 1 1 60DAE69C
 P 5300 6150
-F 0 "#PWR?" H 5300 5900 50  0001 C CNN
+F 0 "#PWR0152" H 5300 5900 50  0001 C CNN
 F 1 "GND" V 5305 6022 50  0000 R CNN
 F 2 "" H 5300 6150 50  0001 C CNN
 F 3 "" H 5300 6150 50  0001 C CNN
@@ -1338,22 +1214,21 @@ F 3 "" H 5300 6150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0153
 U 1 1 60DAF674
 P 5300 5750
-F 0 "#PWR?" H 5300 5500 50  0001 C CNN
+F 0 "#PWR0153" H 5300 5500 50  0001 C CNN
 F 1 "GND" V 5305 5622 50  0000 R CNN
 F 2 "" H 5300 5750 50  0001 C CNN
 F 3 "" H 5300 5750 50  0001 C CNN
 	1    5300 5750
 	0    -1   -1   0   
 $EndComp
-NoConn ~ 4100 6150
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0154
 U 1 1 60DB4C7A
 P 5300 5950
-F 0 "#PWR?" H 5300 5700 50  0001 C CNN
+F 0 "#PWR0154" H 5300 5700 50  0001 C CNN
 F 1 "GND" V 5305 5822 50  0000 R CNN
 F 2 "" H 5300 5950 50  0001 C CNN
 F 3 "" H 5300 5950 50  0001 C CNN
@@ -1367,8 +1242,428 @@ Wire Wire Line
 	5750 3600 5750 6550
 Wire Wire Line
 	5750 6550 5300 6550
-Text Notes 3150 6000 0    50   ~ 10
-to AND w/ current LED\n
-Text Notes 6900 3350 0    50   ~ 10
-add AND, delay element per video\n
+Text GLabel 5350 2700 2    50   Input ~ 0
+PAS_ON
+Text GLabel 6600 2650 2    50   Input ~ 0
+PAS_ON
+Text GLabel 4000 750  0    50   Input ~ 0
+PAS_ON
+Text GLabel 4100 5950 0    50   Input ~ 0
+RGN_FLSH
+Text GLabel 4000 950  0    50   Input ~ 0
+RGN_FLSH
+$Comp
+L 4xxx:4081 U6
+U 1 1 60DB2DE4
+P 4300 850
+F 0 "U6" H 4300 1175 50  0000 C CNN
+F 1 "4081" H 4300 1084 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4300 850 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4073bms-81bms-82bms.pdf" H 4300 850 50  0001 C CNN
+	1    4300 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1650 5200 1500
+$Comp
+L 4xxx:4081 U6
+U 2 1 60DC0589
+P 6050 1800
+F 0 "U6" V 6096 1620 50  0000 R CNN
+F 1 "4081" V 6005 1620 50  0000 R CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6050 1800 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4073bms-81bms-82bms.pdf" H 6050 1800 50  0001 C CNN
+	2    6050 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6150 2200 6150 2100
+$Comp
+L Device:R R9
+U 1 1 60E000EB
+P 5900 2600
+F 0 "R9" H 5970 2646 50  0000 L CNN
+F 1 "392K" H 5970 2555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5830 2600 50  0001 C CNN
+F 3 "~" H 5900 2600 50  0001 C CNN
+	1    5900 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 60E015DA
+P 6200 2300
+F 0 "C11" V 5948 2300 50  0000 C CNN
+F 1 "1u" V 6039 2300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6238 2150 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/tdk-corporation/C1608X7R1C105K080AC/634399" H 6200 2300 50  0001 C CNN
+	1    6200 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0155
+U 1 1 60E0378D
+P 6350 2300
+F 0 "#PWR0155" H 6350 2050 50  0001 C CNN
+F 1 "GND" V 6355 2172 50  0000 R CNN
+F 2 "" H 6350 2300 50  0001 C CNN
+F 3 "" H 6350 2300 50  0001 C CNN
+	1    6350 2300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5900 2450 5900 2300
+Wire Wire Line
+	5900 2750 6000 2750
+$Comp
+L 4xxx:4081 U6
+U 3 1 60E2CD17
+P 9350 3300
+F 0 "U6" H 9350 3625 50  0000 C CNN
+F 1 "4081" H 9350 3534 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 9350 3300 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4073bms-81bms-82bms.pdf" H 9350 3300 50  0001 C CNN
+	3    9350 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2800 7900 2800
+Wire Wire Line
+	8900 4050 8900 3400
+Wire Wire Line
+	8900 3400 9050 3400
+Wire Wire Line
+	9000 2700 9000 3200
+Wire Wire Line
+	9000 3200 9050 3200
+Text GLabel 9650 3300 2    50   Input ~ 0
+PEDAL
+Text GLabel 6600 2750 2    50   Input ~ 0
+PEDAL
+Text GLabel 5050 4000 2    50   Input ~ 0
+PEDAL
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 60E934E6
+P 7050 700
+F 0 "J4" V 7112 744 50  0000 L CNN
+F 1 "brk_sense" V 7203 744 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7050 700 50  0001 C CNN
+F 3 "~" H 7050 700 50  0001 C CNN
+	1    7050 700 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VDD #PWR0156
+U 1 1 60E97622
+P 6950 900
+F 0 "#PWR0156" H 6950 750 50  0001 C CNN
+F 1 "VDD" H 6965 1073 50  0000 C CNN
+F 2 "" H 6950 900 50  0001 C CNN
+F 3 "" H 6950 900 50  0001 C CNN
+	1    6950 900 
+	-1   0    0    1   
+$EndComp
+Text GLabel 7050 900  3    50   Input ~ 0
+BRK
+Text GLabel 5950 3400 0    50   Input ~ 0
+BRK
+Connection ~ 8700 2050
+Wire Wire Line
+	8700 2050 8900 2050
+Wire Wire Line
+	6250 1650 6250 1500
+Wire Wire Line
+	6150 1750 6700 1750
+Wire Wire Line
+	5900 2300 5950 2300
+Wire Wire Line
+	5950 2100 5950 2300
+Wire Wire Line
+	5950 2300 6050 2300
+Connection ~ 5950 2300
+Wire Wire Line
+	6150 2200 6900 2200
+Wire Wire Line
+	6900 3400 6600 3400
+Text GLabel 5350 3400 2    50   Input ~ 0
+BRK
+Text Notes 7100 3100 2    50   ~ 0
+PTH for \nbodge!
+Wire Wire Line
+	6600 2850 6900 2850
+Wire Wire Line
+	6900 2200 6900 2850
+Connection ~ 6900 2850
+Wire Wire Line
+	6900 2850 6900 3400
+Wire Wire Line
+	5050 3400 5350 3400
+Text Notes 5250 3450 2    50   ~ 10
+*
+Text Notes 6950 3200 2    50   ~ 10
+*
+Connection ~ 7150 2800
+Wire Wire Line
+	7150 4250 7900 4250
+Wire Wire Line
+	7150 2800 7150 4250
+$Comp
+L 4xxx:4081 U6
+U 5 1 60F1160D
+P 6350 6350
+F 0 "U6" H 6120 6304 50  0000 R CNN
+F 1 "4081" H 6120 6395 50  0000 R CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6350 6350 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4073bms-81bms-82bms.pdf" H 6350 6350 50  0001 C CNN
+	5    6350 6350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0157
+U 1 1 60F1A9E3
+P 6350 5850
+F 0 "#PWR0157" H 6350 5600 50  0001 C CNN
+F 1 "GND" V 6355 5722 50  0000 R CNN
+F 2 "" H 6350 5850 50  0001 C CNN
+F 3 "" H 6350 5850 50  0001 C CNN
+	1    6350 5850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VDD #PWR0158
+U 1 1 60F1BA89
+P 6350 6850
+F 0 "#PWR0158" H 6350 6700 50  0001 C CNN
+F 1 "VDD" V 6365 6978 50  0000 L CNN
+F 2 "" H 6350 6850 50  0001 C CNN
+F 3 "" H 6350 6850 50  0001 C CNN
+	1    6350 6850
+	0    1    1    0   
+$EndComp
+$Comp
+L 4xxx:4081 U6
+U 4 1 60F1CE78
+P 3200 6250
+F 0 "U6" H 3200 5933 50  0000 C CNN
+F 1 "4081" H 3200 6024 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3200 6250 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4073bms-81bms-82bms.pdf" H 3200 6250 50  0001 C CNN
+	4    3200 6250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5200 1650 4650 1650
+Wire Wire Line
+	4650 1650 4650 1400
+Text GLabel 5350 2900 2    50   Input ~ 0
+PAS_OFF
+Text GLabel 3500 6350 2    50   Input ~ 0
+PAS_OFF
+Wire Wire Line
+	3500 6150 4100 6150
+Text GLabel 4700 850  2    50   Input ~ 0
+RGN_FLSH_2
+Text GLabel 2900 6250 0    50   Input ~ 0
+RGN_FLSH_2
+Wire Wire Line
+	5950 1600 5950 1500
+$Comp
+L power:VDD #PWR0159
+U 1 1 60F4E922
+P 4750 1150
+F 0 "#PWR0159" H 4750 1000 50  0001 C CNN
+F 1 "VDD" H 4765 1323 50  0000 C CNN
+F 2 "" H 4750 1150 50  0001 C CNN
+F 3 "" H 4750 1150 50  0001 C CNN
+	1    4750 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0160
+U 1 1 60F4D706
+P 4550 1150
+F 0 "#PWR0160" H 4550 900 50  0001 C CNN
+F 1 "GND" V 4555 1022 50  0000 R CNN
+F 2 "" H 4550 1150 50  0001 C CNN
+F 3 "" H 4550 1150 50  0001 C CNN
+	1    4550 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xGxx:74AHC1G32 U8
+U 1 1 60F2B63A
+P 4650 1150
+F 0 "U8" V 4579 1280 50  0000 L CNN
+F 1 "74VHC1G32" V 4670 1280 50  0000 L CNN
+F 2 "Package_SO:TSOP-5_1.65x3.05mm_P0.95mm" H 4650 1150 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/on-semiconductor/MC74VHC1G32DTT1G/919315" H 4650 1150 50  0001 C CNN
+	1    4650 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 4050 5700 4050
+Wire Wire Line
+	5600 2100 5600 3800
+Connection ~ 5700 4050
+Wire Wire Line
+	5700 4050 6000 4050
+Wire Wire Line
+	5700 2100 5700 4050
+$Comp
+L Device:R R10
+U 1 1 6106507C
+P 7550 1750
+F 0 "R10" V 7343 1750 50  0000 C CNN
+F 1 "1.6k" V 7434 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7480 1750 50  0001 C CNN
+F 3 "~" H 7550 1750 50  0001 C CNN
+	1    7550 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7700 1750 7850 1750
+Wire Wire Line
+	7400 1750 6700 1750
+Connection ~ 6700 1750
+$Comp
+L 4xxx:14538 U1
+U 3 1 602B331E
+P 9300 4200
+F 0 "U1" H 9300 4667 50  0000 C CNN
+F 1 "14538" H 9300 4576 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 9300 4200 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/MC14538B-D.PDF" H 9300 4200 50  0001 C CNN
+	3    9300 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L 4xxx:14538 U1
+U 1 1 6029DE32
+P 8400 2800
+F 0 "U1" H 8400 3267 50  0000 C CNN
+F 1 "14538" H 8400 3176 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 8400 2800 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/MC14538B-D.PDF" H 8400 2800 50  0001 C CNN
+	1    8400 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:14538 U1
+U 2 1 602A2F9B
+P 8400 4150
+F 0 "U1" H 8400 4617 50  0000 C CNN
+F 1 "14538" H 8400 4526 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 8400 4150 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/MC14538B-D.PDF" H 8400 4150 50  0001 C CNN
+	2    8400 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J5
+U 1 1 60EA9C72
+P 5700 1800
+F 0 "J5" V 5704 1880 50  0000 L CNN
+F 1 "jumper" V 5795 1880 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 5700 1800 50  0001 C CNN
+F 3 "~" H 5700 1800 50  0001 C CNN
+	1    5700 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 1600 5700 1600
+Wire Wire Line
+	5700 1600 5950 1600
+Connection ~ 5700 1600
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 610A2436
+P 10300 1400
+F 0 "H1" H 10400 1449 50  0000 L CNN
+F 1 "MountingHole_Pad" H 10400 1358 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 10300 1400 50  0001 C CNN
+F 3 "~" H 10300 1400 50  0001 C CNN
+	1    10300 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 610A42C6
+P 10300 1750
+F 0 "H2" H 10400 1799 50  0000 L CNN
+F 1 "MountingHole_Pad" H 10400 1708 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 10300 1750 50  0001 C CNN
+F 3 "~" H 10300 1750 50  0001 C CNN
+	1    10300 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 610A54F2
+P 10300 2150
+F 0 "H3" H 10400 2199 50  0000 L CNN
+F 1 "MountingHole_Pad" H 10400 2108 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 10300 2150 50  0001 C CNN
+F 3 "~" H 10300 2150 50  0001 C CNN
+	1    10300 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 610A69DF
+P 10300 2550
+F 0 "H4" H 10400 2599 50  0000 L CNN
+F 1 "MountingHole_Pad" H 10400 2508 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 10300 2550 50  0001 C CNN
+F 3 "~" H 10300 2550 50  0001 C CNN
+	1    10300 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0161
+U 1 1 610A8BAB
+P 10300 1500
+F 0 "#PWR0161" H 10300 1250 50  0001 C CNN
+F 1 "GND" V 10305 1372 50  0000 R CNN
+F 2 "" H 10300 1500 50  0001 C CNN
+F 3 "" H 10300 1500 50  0001 C CNN
+	1    10300 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0162
+U 1 1 610A9DE1
+P 10300 1850
+F 0 "#PWR0162" H 10300 1600 50  0001 C CNN
+F 1 "GND" V 10305 1722 50  0000 R CNN
+F 2 "" H 10300 1850 50  0001 C CNN
+F 3 "" H 10300 1850 50  0001 C CNN
+	1    10300 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0163
+U 1 1 610AAE1C
+P 10300 2250
+F 0 "#PWR0163" H 10300 2000 50  0001 C CNN
+F 1 "GND" V 10305 2122 50  0000 R CNN
+F 2 "" H 10300 2250 50  0001 C CNN
+F 3 "" H 10300 2250 50  0001 C CNN
+	1    10300 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0164
+U 1 1 610ABFBD
+P 10300 2650
+F 0 "#PWR0164" H 10300 2400 50  0001 C CNN
+F 1 "GND" V 10305 2522 50  0000 R CNN
+F 2 "" H 10300 2650 50  0001 C CNN
+F 3 "" H 10300 2650 50  0001 C CNN
+	1    10300 2650
+	0    1    1    0   
+$EndComp
+Connection ~ 8000 1750
+Wire Wire Line
+	8000 1750 8100 1750
 $EndSCHEMATC
