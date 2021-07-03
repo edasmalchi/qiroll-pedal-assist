@@ -949,7 +949,7 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8700 1750 8900 1750
+	8700 1750 8750 1750
 $Comp
 L power:GND #PWR0144
 U 1 1 60683075
@@ -1662,8 +1662,6 @@ Connection ~ 8000 1750
 Wire Wire Line
 	8000 1750 8100 1750
 Wire Wire Line
-	6150 1750 7400 1750
-Wire Wire Line
 	7050 1050 7050 1000
 Wire Wire Line
 	7050 1000 7250 1000
@@ -1682,14 +1680,59 @@ F 3 "~" H 7400 1000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0165
 U 1 1 60E123A7
 P 7550 1000
-F 0 "#PWR?" H 7550 750 50  0001 C CNN
+F 0 "#PWR0165" H 7550 750 50  0001 C CNN
 F 1 "GND" V 7555 872 50  0000 R CNN
 F 2 "" H 7550 1000 50  0001 C CNN
 F 3 "" H 7550 1000 50  0001 C CNN
 	1    7550 1000
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Device:Polyfuse_Small F1
+U 1 1 60E03DF4
+P 6700 1850
+F 0 "F1" V 6495 1850 50  0000 C CNN
+F 1 "PTC" V 6586 1850 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 6750 1650 50  0001 L CNN
+F 3 "https://www.digikey.com/en/products/detail/bel-fuse-inc/0ZCJ0012FF2E/4156129~" H 6700 1850 50  0001 C CNN
+	1    6700 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7150 1750 7400 1750
+Wire Wire Line
+	7150 1750 7150 1850
+Wire Wire Line
+	7150 1850 6800 1850
+Wire Wire Line
+	6600 1850 6450 1850
+Wire Wire Line
+	6450 1850 6450 1750
+Wire Wire Line
+	6450 1750 6150 1750
+Wire Wire Line
+	8000 1750 8000 1350
+Wire Wire Line
+	8000 1350 8250 1350
+$Comp
+L Device:D D1
+U 1 1 60E52D25
+P 8400 1350
+F 0 "D1" H 8400 1567 50  0000 C CNN
+F 1 "Reverse Protect Diode" H 8400 1476 50  0000 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 8400 1350 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/vishay-general-semiconductor-diodes-division/LL4150GS18/4810537" H 8400 1350 50  0001 C CNN
+	1    8400 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 1350 8750 1350
+Wire Wire Line
+	8750 1350 8750 1750
+Connection ~ 8750 1750
+Wire Wire Line
+	8750 1750 8900 1750
 $EndSCHEMATC

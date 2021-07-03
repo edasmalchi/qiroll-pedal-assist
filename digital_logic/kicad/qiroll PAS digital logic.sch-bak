@@ -1364,7 +1364,7 @@ F 3 "" H 6950 900 50  0001 C CNN
 	1    6950 900 
 	-1   0    0    1   
 $EndComp
-Text GLabel 7050 900  3    50   Input ~ 0
+Text GLabel 7050 1050 3    50   Input ~ 0
 BRK
 Text GLabel 5950 3400 0    50   Input ~ 0
 BRK
@@ -1373,8 +1373,6 @@ Wire Wire Line
 	8700 2050 8900 2050
 Wire Wire Line
 	6250 1650 6250 1500
-Wire Wire Line
-	6150 1750 6700 1750
 Wire Wire Line
 	5900 2300 5950 2300
 Wire Wire Line
@@ -1523,9 +1521,6 @@ F 3 "~" H 7550 1750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7700 1750 7850 1750
-Wire Wire Line
-	7400 1750 6700 1750
-Connection ~ 6700 1750
 $Comp
 L 4xxx:14538 U1
 U 3 1 602B331E
@@ -1666,4 +1661,35 @@ $EndComp
 Connection ~ 8000 1750
 Wire Wire Line
 	8000 1750 8100 1750
+Wire Wire Line
+	6150 1750 7400 1750
+Wire Wire Line
+	7050 1050 7050 1000
+Wire Wire Line
+	7050 1000 7250 1000
+Connection ~ 7050 1000
+Wire Wire Line
+	7050 1000 7050 900 
+$Comp
+L Device:R R11
+U 1 1 60E0D46A
+P 7400 1000
+F 0 "R11" V 7200 1000 50  0000 C CNN
+F 1 "10k" V 7300 1000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7330 1000 50  0001 C CNN
+F 3 "~" H 7400 1000 50  0001 C CNN
+	1    7400 1000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60E123A7
+P 7550 1000
+F 0 "#PWR?" H 7550 750 50  0001 C CNN
+F 1 "GND" V 7555 872 50  0000 R CNN
+F 2 "" H 7550 1000 50  0001 C CNN
+F 3 "" H 7550 1000 50  0001 C CNN
+	1    7550 1000
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
