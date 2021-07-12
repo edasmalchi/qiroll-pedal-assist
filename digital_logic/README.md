@@ -14,5 +14,5 @@ Built from some 4000-series CMOS chips, this design also implements pedal assist
 
 ### PCB New Features (not in old schematic)
 * LED flashes under regenerative braking with PAS on or off
-* Regen cancel on pedal functionality improved
+* Regen cancel on pedal functionality improved (shouldn't inadvertanly change mode...)
 * Optional brake sensor cancels assist and starts regen braking when mechanical brakes pulled
