@@ -1076,8 +1076,6 @@ Wire Wire Line
 	7200 1550 7150 1550
 Wire Wire Line
 	7150 1550 7150 1500
-Wire Wire Line
-	7850 1750 8000 1750
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 607B336A
@@ -1293,8 +1291,8 @@ $Comp
 L Device:C C11
 U 1 1 60E015DA
 P 6200 2300
-F 0 "C11" V 5948 2300 50  0000 C CNN
-F 1 "1u" V 6039 2300 50  0000 C CNN
+F 0 "C11" V 5950 2350 50  0000 C CNN
+F 1 ".1u" V 6050 2350 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6238 2150 50  0001 C CNN
 F 3 "https://www.digikey.com/en/products/detail/tdk-corporation/C1608X7R1C105K080AC/634399" H 6200 2300 50  0001 C CNN
 	1    6200 2300
@@ -1658,9 +1656,6 @@ F 3 "" H 10300 2650 50  0001 C CNN
 	1    10300 2650
 	0    1    1    0   
 $EndComp
-Connection ~ 8000 1750
-Wire Wire Line
-	8000 1750 8100 1750
 Wire Wire Line
 	7050 1050 7050 1000
 Wire Wire Line
@@ -1713,10 +1708,6 @@ Wire Wire Line
 	6450 1850 6450 1750
 Wire Wire Line
 	6450 1750 6150 1750
-Wire Wire Line
-	8000 1750 8000 1350
-Wire Wire Line
-	8000 1350 8250 1350
 $Comp
 L Device:D D1
 U 1 1 60E52D25
@@ -1735,4 +1726,11 @@ Wire Wire Line
 Connection ~ 8750 1750
 Wire Wire Line
 	8750 1750 8900 1750
+Wire Wire Line
+	7850 1750 8100 1750
+Wire Wire Line
+	7400 1350 7400 1750
+Wire Wire Line
+	7400 1350 8250 1350
+Connection ~ 7400 1750
 $EndSCHEMATC
