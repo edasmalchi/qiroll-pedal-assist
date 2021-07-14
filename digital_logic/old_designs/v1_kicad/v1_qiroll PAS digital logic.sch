@@ -949,7 +949,7 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8700 1750 8750 1750
+	8700 1750 8900 1750
 $Comp
 L power:GND #PWR0144
 U 1 1 60683075
@@ -1076,6 +1076,8 @@ Wire Wire Line
 	7200 1550 7150 1550
 Wire Wire Line
 	7150 1550 7150 1500
+Wire Wire Line
+	7850 1750 8000 1750
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 607B336A
@@ -1274,6 +1276,8 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4073bms-81bms
 	2    6050 1800
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	6150 2200 6150 2100
 $Comp
 L Device:R R9
 U 1 1 60E000EB
@@ -1289,8 +1293,8 @@ $Comp
 L Device:C C11
 U 1 1 60E015DA
 P 6200 2300
-F 0 "C11" V 5950 2350 50  0000 C CNN
-F 1 ".1u" V 6050 2350 50  0000 C CNN
+F 0 "C11" V 5948 2300 50  0000 C CNN
+F 1 "1u" V 6039 2300 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6238 2150 50  0001 C CNN
 F 3 "https://www.digikey.com/en/products/detail/tdk-corporation/C1608X7R1C105K080AC/634399" H 6200 2300 50  0001 C CNN
 	1    6200 2300
@@ -1360,7 +1364,7 @@ F 3 "" H 6950 900 50  0001 C CNN
 	1    6950 900 
 	-1   0    0    1   
 $EndComp
-Text GLabel 7050 1050 3    50   Input ~ 0
+Text GLabel 7050 900  3    50   Input ~ 0
 BRK
 Text GLabel 5950 3400 0    50   Input ~ 0
 BRK
@@ -1370,12 +1374,16 @@ Wire Wire Line
 Wire Wire Line
 	6250 1650 6250 1500
 Wire Wire Line
+	6150 1750 6700 1750
+Wire Wire Line
 	5900 2300 5950 2300
 Wire Wire Line
 	5950 2100 5950 2300
 Wire Wire Line
 	5950 2300 6050 2300
 Connection ~ 5950 2300
+Wire Wire Line
+	6150 2200 6900 2200
 Wire Wire Line
 	6900 3400 6600 3400
 Text GLabel 5350 3400 2    50   Input ~ 0
@@ -1384,6 +1392,9 @@ Text Notes 7100 3100 2    50   ~ 0
 PTH for \nbodge!
 Wire Wire Line
 	6600 2850 6900 2850
+Wire Wire Line
+	6900 2200 6900 2850
+Connection ~ 6900 2850
 Wire Wire Line
 	6900 2850 6900 3400
 Wire Wire Line
@@ -1512,6 +1523,9 @@ F 3 "~" H 7550 1750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7700 1750 7850 1750
+Wire Wire Line
+	7400 1750 6700 1750
+Connection ~ 6700 1750
 $Comp
 L 4xxx:14538 U1
 U 3 1 602B331E
@@ -1649,94 +1663,7 @@ F 3 "" H 10300 2650 50  0001 C CNN
 	1    10300 2650
 	0    1    1    0   
 $EndComp
+Connection ~ 8000 1750
 Wire Wire Line
-	7050 1050 7050 1000
-Wire Wire Line
-	7050 1000 7250 1000
-Connection ~ 7050 1000
-Wire Wire Line
-	7050 1000 7050 900 
-$Comp
-L Device:R R11
-U 1 1 60E0D46A
-P 7400 1000
-F 0 "R11" V 7200 1000 50  0000 C CNN
-F 1 "10k" V 7300 1000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7330 1000 50  0001 C CNN
-F 3 "~" H 7400 1000 50  0001 C CNN
-	1    7400 1000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0165
-U 1 1 60E123A7
-P 7550 1000
-F 0 "#PWR0165" H 7550 750 50  0001 C CNN
-F 1 "GND" V 7555 872 50  0000 R CNN
-F 2 "" H 7550 1000 50  0001 C CNN
-F 3 "" H 7550 1000 50  0001 C CNN
-	1    7550 1000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:Polyfuse_Small F1
-U 1 1 60E03DF4
-P 6700 1850
-F 0 "F1" V 6495 1850 50  0000 C CNN
-F 1 "PTC" V 6586 1850 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" H 6750 1650 50  0001 L CNN
-F 3 "https://www.digikey.com/en/products/detail/bel-fuse-inc/0ZCJ0012FF2E/4156129~" H 6700 1850 50  0001 C CNN
-	1    6700 1850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7150 1750 7400 1750
-Wire Wire Line
-	7150 1750 7150 1850
-Wire Wire Line
-	7150 1850 6800 1850
-Wire Wire Line
-	6600 1850 6450 1850
-Wire Wire Line
-	6450 1850 6450 1750
-Wire Wire Line
-	6450 1750 6150 1750
-$Comp
-L Device:D D1
-U 1 1 60E52D25
-P 8400 1350
-F 0 "D1" H 8400 1567 50  0000 C CNN
-F 1 "Reverse Protect Diode" H 8400 1476 50  0000 C CNN
-F 2 "Diode_SMD:D_MiniMELF" H 8400 1350 50  0001 C CNN
-F 3 "https://www.digikey.com/en/products/detail/vishay-general-semiconductor-diodes-division/LL4150GS18/4810537" H 8400 1350 50  0001 C CNN
-	1    8400 1350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8550 1350 8750 1350
-Wire Wire Line
-	8750 1350 8750 1750
-Connection ~ 8750 1750
-Wire Wire Line
-	8750 1750 8900 1750
-Wire Wire Line
-	7850 1750 8100 1750
-Wire Wire Line
-	7400 1350 7400 1750
-Wire Wire Line
-	7400 1350 8250 1350
-Connection ~ 7400 1750
-Wire Wire Line
-	6150 2100 6600 2100
-$Comp
-L power:VDD #PWR?
-U 1 1 60F0AE87
-P 6600 2100
-F 0 "#PWR?" H 6600 1950 50  0001 C CNN
-F 1 "VDD" V 6615 2228 50  0000 L CNN
-F 2 "" H 6600 2100 50  0001 C CNN
-F 3 "" H 6600 2100 50  0001 C CNN
-	1    6600 2100
-	0    1    1    0   
-$EndComp
+	8000 1750 8100 1750
 $EndSCHEMATC
