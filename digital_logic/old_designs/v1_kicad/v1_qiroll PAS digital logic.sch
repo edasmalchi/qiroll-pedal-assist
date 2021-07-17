@@ -1276,8 +1276,6 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4073bms-81bms
 	2    6050 1800
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6150 2200 6150 2100
 $Comp
 L Device:R R9
 U 1 1 60E000EB
@@ -1374,16 +1372,12 @@ Wire Wire Line
 Wire Wire Line
 	6250 1650 6250 1500
 Wire Wire Line
-	6150 1750 6700 1750
-Wire Wire Line
 	5900 2300 5950 2300
 Wire Wire Line
 	5950 2100 5950 2300
 Wire Wire Line
 	5950 2300 6050 2300
 Connection ~ 5950 2300
-Wire Wire Line
-	6150 2200 6900 2200
 Wire Wire Line
 	6900 3400 6600 3400
 Text GLabel 5350 3400 2    50   Input ~ 0
@@ -1392,9 +1386,6 @@ Text Notes 7100 3100 2    50   ~ 0
 PTH for \nbodge!
 Wire Wire Line
 	6600 2850 6900 2850
-Wire Wire Line
-	6900 2200 6900 2850
-Connection ~ 6900 2850
 Wire Wire Line
 	6900 2850 6900 3400
 Wire Wire Line
@@ -1523,9 +1514,6 @@ F 3 "~" H 7550 1750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7700 1750 7850 1750
-Wire Wire Line
-	7400 1750 6700 1750
-Connection ~ 6700 1750
 $Comp
 L 4xxx:14538 U1
 U 3 1 602B331E
@@ -1666,4 +1654,19 @@ $EndComp
 Connection ~ 8000 1750
 Wire Wire Line
 	8000 1750 8100 1750
+Wire Wire Line
+	6150 1750 7400 1750
+Wire Wire Line
+	6150 2100 6550 2100
+$Comp
+L power:VDD #PWR?
+U 1 1 60F494E6
+P 6550 2100
+F 0 "#PWR?" H 6550 1950 50  0001 C CNN
+F 1 "VDD" V 6565 2228 50  0000 L CNN
+F 2 "" H 6550 2100 50  0001 C CNN
+F 3 "" H 6550 2100 50  0001 C CNN
+	1    6550 2100
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
