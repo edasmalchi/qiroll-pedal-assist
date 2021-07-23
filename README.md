@@ -5,9 +5,7 @@ So I got this Qiroll friction-drive ebike [kit](https://www.aliexpress.com/item/
 
 The lack of any sort of pedal assist bothered me, with the original design you have to hold down a switch to keep the motor on. (It's a simple switch, not a real throttle so the motor is either on or off. There is a way to select between a lower power mode and a higher power mode.)
 
-This project aims to add pedal assist functionality to the Qiroll kit. It's currently implemented with a Digispark-clone attiny85 arduino-compatible [microcontroller](https://smile.amazon.com/gp/product/B07KVS4YGQ/) and this 12-magnet pedal assist [sensor](https://smile.amazon.com/gp/product/B08GY819YF/), although similar products could work too. Sensors with more magnets should have smoother operation.
-
-Because I was having fun with the electronics hobby, I also designed a version that uses a handful of cmos digital logic ICs to do the same thing. It's bigger than the digispark, but uses less power and perhaps more reliable.
+This project aims to add pedal assist functionality to the Qiroll kit. I'm using this 12-magnet pedal assist [sensor](https://smile.amazon.com/gp/product/B08GY819YF/), although similar products could work too. The project also supports an optional brake sensor, I'm using [this one](https://www.aliexpress.com/item/4000445394702.html) but others likely work as well. Be sure to verify proper operation in case yours works differently.
 
 #### Hardware Mods
 * Since both my designs need only one button, with single-clicks turning pedal assist on/off and double-clicks switching controller modes (and/or enabling regen), I didn't need the second button in the original Qiroll switch. So I desoldered it, and used the space/wiring for a resistor and an led that lines up nicely with the hole left by taking the button out, letting me see if pedal assist is currently on or off!
@@ -15,12 +13,9 @@ Because I was having fun with the electronics hobby, I also designed a version t
 
 #### Notes
 * The sensor I got reads in both directions, so it will trigger on backwards pedaling as well. I don't think this is a big deal, but there may be sensors out there that only read in one direction.
-* After much investigation, the power from the Qiroll micro-usb switch port seems to fluctuate quite a bit. So the reliable thing to do is tap into the + side of the battery, using a voltage regulator (or buck converter) to drop down the battery voltage.
-    * Arduino version currently runs my 7805 voltage regulator rather hot, but heat is no issue with the digital logic version
+* After much investigation, the power from the Qiroll micro-usb switch port seems to fluctuate quite a bit. So the reliable thing to do is tap into the + side of the battery, using a linear voltage regulator (or buck converter) to drop down the battery voltage.
 * ___Use at your own risk! I reccomend extensive testing of whatever implementation you come up with, ensuring your brakes can stop the bike even if the motor sticks on, and having the battery cable within reach to disconnect if necessary!___
 
 #### Progress
-* working version of Arduino code (working on rewrite to lower power consumption)
-* attiny85 board mounted to protoboard w/ connectors, on-bike and working well (currently consuming about 60ma, runs the 7805 rather hot!)
-* cmos digital logic version built on protoboard, on-bike and in testing (larger than attiny85 board, but stays cool and can't crash)
-* working on smaller digital logic with better regen handling, custom pcb
+* Version 2 of digital logic version is nearly ready to order a PCB run, then I will assemble and test. Should be good, folks.
+* Arduino version is tabled for now since I'm having too much fun with the digital logic chips, but it remains an option if you'd like to pick up where I left off with better code and low power consumption optimization.
