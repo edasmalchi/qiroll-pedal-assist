@@ -7,7 +7,7 @@ Sheet 1 1
 Title "Qiroll Pedal Assist"
 Date "2021-07-22"
 Rev "2"
-Comp "u/edibot42"
+Comp "Eric Dasmalchi"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -582,23 +582,23 @@ Wire Wire Line
 $Comp
 L 4xxx:HEF4093B U1
 U 1 1 60F8A676
-P 2750 1900
-F 0 "U1" H 2750 2225 50  0000 C CNN
-F 1 "4093B" H 2750 2134 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2750 1900 50  0001 C CNN
-F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/0c/9a/06/85/4d/aa/CD00000398.pdf/files/CD00000398.pdf/jcr:content/translations/en.CD00000398.pdf" H 2750 1900 50  0001 C CNN
-	1    2750 1900
+P 2900 1900
+F 0 "U1" H 2900 2225 50  0000 C CNN
+F 1 "4093B" H 2900 2134 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2900 1900 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/0c/9a/06/85/4d/aa/CD00000398.pdf/files/CD00000398.pdf/jcr:content/translations/en.CD00000398.pdf" H 2900 1900 50  0001 C CNN
+	1    2900 1900
 	1    0    0    -1  
 $EndComp
 $Comp
 L 4xxx:HEF4093B U1
 U 2 1 60F9AADB
-P 2750 2500
-F 0 "U1" H 2750 2150 50  0000 C CNN
-F 1 "4093B" H 2750 2274 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2750 2500 50  0001 C CNN
-F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/0c/9a/06/85/4d/aa/CD00000398.pdf/files/CD00000398.pdf/jcr:content/translations/en.CD00000398.pdf" H 2750 2500 50  0001 C CNN
-	2    2750 2500
+P 2900 2500
+F 0 "U1" H 2900 2150 50  0000 C CNN
+F 1 "4093B" H 2900 2274 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2900 2500 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/0c/9a/06/85/4d/aa/CD00000398.pdf/files/CD00000398.pdf/jcr:content/translations/en.CD00000398.pdf" H 2900 2500 50  0001 C CNN
+	2    2900 2500
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -637,12 +637,12 @@ $EndComp
 $Comp
 L Device:R R1
 U 1 1 60FAFC20
-P 2900 1400
-F 0 "R1" V 2693 1400 50  0000 C CNN
-F 1 "200k" V 2784 1400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 1400 50  0001 C CNN
-F 3 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-3GEYJ204V/104342" H 2900 1400 50  0001 C CNN
-	1    2900 1400
+P 3050 1400
+F 0 "R1" V 2843 1400 50  0000 C CNN
+F 1 "200k" V 2934 1400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2980 1400 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-3GEYJ204V/104342" H 3050 1400 50  0001 C CNN
+	1    3050 1400
 	0    1    1    0   
 $EndComp
 $Comp
@@ -659,20 +659,20 @@ $EndComp
 Wire Wire Line
 	5350 5250 5500 5250
 Wire Wire Line
-	2150 1400 2450 1400
+	2150 1400 2600 1400
 Wire Wire Line
-	2450 1400 2450 1800
+	2600 1400 2600 1800
 Wire Wire Line
-	2450 1400 2750 1400
-Connection ~ 2450 1400
+	2600 1400 2900 1400
+Connection ~ 2600 1400
 Wire Wire Line
-	3050 1900 3050 1400
-Connection ~ 3050 1900
+	3200 1900 3200 1400
+Connection ~ 3200 1900
 Wire Wire Line
-	3050 1900 3050 2200
+	3200 1900 3200 2200
 Wire Wire Line
-	3050 2400 3050 2600
-Connection ~ 3050 2400
+	3200 2400 3200 2600
+Connection ~ 3200 2400
 $Comp
 L power:GND #PWR03
 U 1 1 60FDEFF2
@@ -828,7 +828,7 @@ Wire Wire Line
 Wire Wire Line
 	5350 5450 5700 5450
 Wire Wire Line
-	2450 2000 2150 2000
+	2600 2000 2150 2000
 Wire Wire Line
 	2150 2000 2150 4800
 Wire Wire Line
@@ -1042,10 +1042,10 @@ Connection ~ 5600 3750
 Wire Wire Line
 	5600 3750 6900 3750
 Wire Wire Line
-	2350 2200 3050 2200
-Connection ~ 3050 2200
+	2350 2200 3200 2200
+Connection ~ 3200 2200
 Wire Wire Line
-	3050 2200 3050 2400
+	3200 2200 3200 2400
 $Comp
 L 4xxx:HEF4093B U5
 U 1 1 60FB1238
@@ -1489,7 +1489,7 @@ motor on/off logic\nsee note <<<
 Text Notes 500  2400 0    50   Italic 0
 note: motor on/off logic\nmotor is on (output low)\nif not braking, pedal assist is on,\nand pedaling fast enough\notherwise, motor is off (output high)
 Text Notes 500  3550 0    50   Italic 0
-note: pedal cadence sense\ncadence threshold is nominally\n45rpm on/32rpm off, \nwith C6 installed, C5 uninstalled,\nand typical 4093 Vp/Vn values\n\ninstall C5+C6 to lower threshold, or\nmake up for 4093 Vp/Vn variation\n\ninstall C5 only to raise threshold, or\nmake up for 4093 Vp/Vn variation\n
+note: pedal cadence sense\ncadence threshold is nominally\n40rpm on/29rpm off, \nwith C6 installed, C5 uninstalled,\nand typical 4093 Vp/Vn values\n(Vp = 3.3, Vn = 2.3)\n\ninstall C5+C6 to lower threshold, or\nmake up for 4093 Vp/Vn variation\n\ninstall C5 only to raise threshold, or\nmake up for 4093 Vp/Vn variation\n
 Wire Wire Line
 	3300 5950 5600 5950
 Wire Wire Line
@@ -1543,4 +1543,6 @@ Wire Wire Line
 	4900 3350 5250 3350
 Wire Wire Line
 	4550 3450 4550 3750
+Wire Wire Line
+	2450 2500 2600 2500
 $EndSCHEMATC

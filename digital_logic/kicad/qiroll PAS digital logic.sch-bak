@@ -7,7 +7,7 @@ Sheet 1 1
 Title "Qiroll Pedal Assist"
 Date "2021-07-22"
 Rev "2"
-Comp "u/edibot42"
+Comp "Eric Dasmalchi"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -20,7 +20,7 @@ P 5050 5350
 F 0 "U2" H 5050 5800 50  0000 C CNN
 F 1 "4027B" H 5050 5700 50  0000 C CNN
 F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 5050 5350 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4027bms.pdf" H 5050 5350 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/cd4027b-mil.pdf?ts=1624846134731&ref_url=https%253A%252F%252Fwww.google.com%252F" H 5050 5350 50  0001 C CNN
 	2    5050 5350
 	1    0    0    -1  
 $EndComp
@@ -29,9 +29,9 @@ L Device:R R6
 U 1 1 602C92E7
 P 8900 5000
 F 0 "R6" H 8970 5046 50  0000 L CNN
-F 1 "392k" H 8970 4955 50  0000 L CNN
+F 1 "390k" H 8970 4955 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8830 5000 50  0001 C CNN
-F 3 "~" H 8900 5000 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-3GEYJ394V/135903" H 8900 5000 50  0001 C CNN
 	1    8900 5000
 	1    0    0    -1  
 $EndComp
@@ -53,7 +53,7 @@ P 8300 3450
 F 0 "R5" V 8093 3450 50  0000 C CNN
 F 1 "75k" V 8184 3450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8230 3450 50  0001 C CNN
-F 3 "~" H 8300 3450 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/ww/products/resistors/chip-resistors/general-purpose-chip-resistors/models/ERJ3GEYJ753V" H 8300 3450 50  0001 C CNN
 	1    8300 3450
 	1    0    0    -1  
 $EndComp
@@ -133,7 +133,7 @@ P 8750 5150
 F 0 "C8" V 8498 5150 50  0000 C CNN
 F 1 "1u" V 8589 5150 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8788 5000 50  0001 C CNN
-F 3 "https://www.digikey.com/en/products/detail/tdk-corporation/C1608X7R1C105K080AC/634399" H 8750 5150 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/taiyo-yuden/EMK107BJ105KAHT/4157319" H 8750 5150 50  0001 C CNN
 	1    8750 5150
 	0    1    1    0   
 $EndComp
@@ -144,7 +144,7 @@ P 2800 6950
 F 0 "U2" H 3200 7000 50  0000 R CNN
 F 1 "4027B" H 3250 6900 50  0000 R CNN
 F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 2800 6950 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4027bms.pdf" H 2800 6950 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/cd4027b-mil.pdf?ts=1624846134731&ref_url=https%253A%252F%252Fwww.google.com%252F" H 2800 6950 50  0001 C CNN
 	3    2800 6950
 	1    0    0    -1  
 $EndComp
@@ -155,7 +155,7 @@ P 4900 3850
 F 0 "U2" H 4750 4300 50  0000 C CNN
 F 1 "4027B" H 4750 4200 50  0000 C CNN
 F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 4900 3850 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4027bms.pdf" H 4900 3850 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/cd4027b-mil.pdf?ts=1624846134731&ref_url=https%253A%252F%252Fwww.google.com%252F" H 4900 3850 50  0001 C CNN
 	1    4900 3850
 	1    0    0    -1  
 $EndComp
@@ -245,7 +245,7 @@ P 5900 6950
 F 0 "C4" H 5650 6900 50  0000 L CNN
 F 1 ".1u" H 5650 7000 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5938 6800 50  0001 C CNN
-F 3 "https://www.digikey.com/en/products/detail/taiyo-yuden/EMK107BJ104KAHT/4157318 " H 5900 6950 50  0001 C CNN
+F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=EMK107BJ104KAHT%20%20&u=M" H 5900 6950 50  0001 C CNN
 	1    5900 6950
 	-1   0    0    1   
 $EndComp
@@ -267,7 +267,7 @@ P 9850 1900
 F 0 "C13" H 9965 1946 50  0000 L CNN
 F 1 ".1u" H 9965 1855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9888 1750 50  0001 C CNN
-F 3 "https://www.digikey.com/en/products/detail/taiyo-yuden/EMK107BJ104KAHT/4157318 " H 9850 1900 50  0001 C CNN
+F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=EMK107BJ104KAHT%20%20&u=M" H 9850 1900 50  0001 C CNN
 	1    9850 1900
 	1    0    0    -1  
 $EndComp
@@ -279,7 +279,7 @@ P 8550 1900
 F 0 "C11" H 8665 1946 50  0000 L CNN
 F 1 ".22u" H 8665 1855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8588 1750 50  0001 C CNN
-F 3 "https://www.digikey.com/en/products/detail/tdk-corporation/CGA3E2X5R1A474M080AA/3949673" H 8550 1900 50  0001 C CNN
+F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=EMK107B7224KA-T%20%20&u=M" H 8550 1900 50  0001 C CNN
 	1    8550 1900
 	1    0    0    -1  
 $EndComp
@@ -400,9 +400,9 @@ L Device:R R4
 U 1 1 60E000EB
 P 6300 3450
 F 0 "R4" H 6370 3496 50  0000 L CNN
-F 1 "392k" H 6370 3405 50  0000 L CNN
+F 1 "390k" H 6370 3405 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6230 3450 50  0001 C CNN
-F 3 "~" H 6300 3450 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-3GEYJ394V/135903" H 6300 3450 50  0001 C CNN
 	1    6300 3450
 	1    0    0    -1  
 $EndComp
@@ -413,7 +413,7 @@ P 6600 3250
 F 0 "C3" V 6350 3300 50  0000 C CNN
 F 1 ".1u" V 6450 3300 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6638 3100 50  0001 C CNN
-F 3 "https://www.digikey.com/en/products/detail/tdk-corporation/C1608X7R1C105K080AC/634399" H 6600 3250 50  0001 C CNN
+F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=EMK107BJ104KAHT%20%20&u=M" H 6600 3250 50  0001 C CNN
 	1    6600 3250
 	0    1    1    0   
 $EndComp
@@ -439,7 +439,7 @@ P 7950 1750
 F 0 "R7" V 7743 1750 50  0000 C CNN
 F 1 "1.6k" V 7834 1750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7880 1750 50  0001 C CNN
-F 3 "~" H 7950 1750 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/ww/products/resistors/chip-resistors/general-purpose-chip-resistors/models/ERJ3GEYJ162V" H 7950 1750 50  0001 C CNN
 	1    7950 1750
 	0    1    1    0   
 $EndComp
@@ -450,7 +450,7 @@ P 5200 6950
 F 0 "U6" H 5550 7000 50  0000 C CNN
 F 1 "14538B" H 5600 6900 50  0000 C CNN
 F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 5200 6950 50  0001 C CNN
-F 3 "https://www.onsemi.com/pub/Collateral/MC14538B-D.PDF" H 5200 6950 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/cd14538b.pdf?ts=1624847316445&ref_url=https%253A%252F%252Fwww.google.com%252F" H 5200 6950 50  0001 C CNN
 	3    5200 6950
 	1    0    0    -1  
 $EndComp
@@ -461,7 +461,7 @@ P 9650 5350
 F 0 "U6" H 9650 5817 50  0000 C CNN
 F 1 "14538B" H 9650 5726 50  0000 C CNN
 F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 9650 5350 50  0001 C CNN
-F 3 "https://www.onsemi.com/pub/Collateral/MC14538B-D.PDF" H 9650 5350 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/cd14538b.pdf?ts=1624847316445&ref_url=https%253A%252F%252Fwww.google.com%252F" H 9650 5350 50  0001 C CNN
 	2    9650 5350
 	1    0    0    -1  
 $EndComp
@@ -573,7 +573,7 @@ P 9250 1300
 F 0 "D1" H 9250 1517 50  0000 C CNN
 F 1 "LL4150GS18" H 9250 1426 50  0000 C CNN
 F 2 "Diode_SMD:D_MiniMELF" H 9250 1300 50  0001 C CNN
-F 3 "https://www.digikey.com/en/products/detail/vishay-general-semiconductor-diodes-division/LL4150GS18/4810537" H 9250 1300 50  0001 C CNN
+F 3 "https://rocelec.widen.net/view/pdf/bhc41r7lwc/ONSM-S-A0003539415-1.pdf?t.download=true&u=5oefqw" H 9250 1300 50  0001 C CNN
 	1    9250 1300
 	1    0    0    -1  
 $EndComp
@@ -582,23 +582,23 @@ Wire Wire Line
 $Comp
 L 4xxx:HEF4093B U1
 U 1 1 60F8A676
-P 2750 1900
-F 0 "U1" H 2750 2225 50  0000 C CNN
-F 1 "4093B" H 2750 2134 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2750 1900 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/cd4093b.pdf?ts=1626723872313&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FCD4093B" H 2750 1900 50  0001 C CNN
-	1    2750 1900
+P 2900 1900
+F 0 "U1" H 2900 2225 50  0000 C CNN
+F 1 "4093B" H 2900 2134 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2900 1900 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/0c/9a/06/85/4d/aa/CD00000398.pdf/files/CD00000398.pdf/jcr:content/translations/en.CD00000398.pdf" H 2900 1900 50  0001 C CNN
+	1    2900 1900
 	1    0    0    -1  
 $EndComp
 $Comp
 L 4xxx:HEF4093B U1
 U 2 1 60F9AADB
-P 2750 2500
-F 0 "U1" H 2750 2150 50  0000 C CNN
-F 1 "4093B" H 2750 2274 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2750 2500 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/cd4093b.pdf?ts=1626723872313&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FCD4093B" H 2750 2500 50  0001 C CNN
-	2    2750 2500
+P 2900 2500
+F 0 "U1" H 2900 2150 50  0000 C CNN
+F 1 "4093B" H 2900 2274 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2900 2500 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/0c/9a/06/85/4d/aa/CD00000398.pdf/files/CD00000398.pdf/jcr:content/translations/en.CD00000398.pdf" H 2900 2500 50  0001 C CNN
+	2    2900 2500
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -608,7 +608,7 @@ P 2750 3100
 F 0 "U1" H 2750 3400 50  0000 C CNN
 F 1 "4093B" H 2750 3300 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2750 3100 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/cd4093b.pdf?ts=1626723872313&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FCD4093B" H 2750 3100 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/0c/9a/06/85/4d/aa/CD00000398.pdf/files/CD00000398.pdf/jcr:content/translations/en.CD00000398.pdf" H 2750 3100 50  0001 C CNN
 	3    2750 3100
 	1    0    0    -1  
 $EndComp
@@ -619,7 +619,7 @@ P 2750 3700
 F 0 "U1" H 2750 3383 50  0000 C CNN
 F 1 "4093B" H 2750 3474 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2750 3700 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/cd4093b.pdf?ts=1626723872313&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FCD4093B" H 2750 3700 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/0c/9a/06/85/4d/aa/CD00000398.pdf/files/CD00000398.pdf/jcr:content/translations/en.CD00000398.pdf" H 2750 3700 50  0001 C CNN
 	4    2750 3700
 	-1   0    0    1   
 $EndComp
@@ -630,19 +630,19 @@ P 1950 6950
 F 0 "U1" H 2180 6996 50  0000 L CNN
 F 1 "4093B" H 2180 6905 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1950 6950 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/cd4093b.pdf?ts=1626723872313&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FCD4093B" H 1950 6950 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/0c/9a/06/85/4d/aa/CD00000398.pdf/files/CD00000398.pdf/jcr:content/translations/en.CD00000398.pdf" H 1950 6950 50  0001 C CNN
 	5    1950 6950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R1
 U 1 1 60FAFC20
-P 2900 1400
-F 0 "R1" V 2693 1400 50  0000 C CNN
-F 1 "200k" V 2784 1400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 1400 50  0001 C CNN
-F 3 "~" H 2900 1400 50  0001 C CNN
-	1    2900 1400
+P 3050 1400
+F 0 "R1" V 2843 1400 50  0000 C CNN
+F 1 "200k" V 2934 1400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2980 1400 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-3GEYJ204V/104342" H 3050 1400 50  0001 C CNN
+	1    3050 1400
 	0    1    1    0   
 $EndComp
 $Comp
@@ -652,27 +652,27 @@ P 2150 1550
 F 0 "C1" H 2265 1596 50  0000 L CNN
 F 1 "1u" H 2265 1505 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2188 1400 50  0001 C CNN
-F 3 "~" H 2150 1550 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/taiyo-yuden/EMK107BJ105KAHT/4157319" H 2150 1550 50  0001 C CNN
 	1    2150 1550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5350 5250 5500 5250
 Wire Wire Line
-	2150 1400 2450 1400
+	2150 1400 2600 1400
 Wire Wire Line
-	2450 1400 2450 1800
+	2600 1400 2600 1800
 Wire Wire Line
-	2450 1400 2750 1400
-Connection ~ 2450 1400
+	2600 1400 2900 1400
+Connection ~ 2600 1400
 Wire Wire Line
-	3050 1900 3050 1400
-Connection ~ 3050 1900
+	3200 1900 3200 1400
+Connection ~ 3200 1900
 Wire Wire Line
-	3050 1900 3050 2200
+	3200 1900 3200 2200
 Wire Wire Line
-	3050 2400 3050 2600
-Connection ~ 3050 2400
+	3200 2400 3200 2600
+Connection ~ 3200 2400
 $Comp
 L power:GND #PWR03
 U 1 1 60FDEFF2
@@ -701,7 +701,7 @@ P 4250 1500
 F 0 "U3" H 4250 1825 50  0000 C CNN
 F 1 "4093B" H 4250 1734 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4250 1500 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/cd4093b.pdf?ts=1626723872313&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FCD4093B" H 4250 1500 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/0c/9a/06/85/4d/aa/CD00000398.pdf/files/CD00000398.pdf/jcr:content/translations/en.CD00000398.pdf" H 4250 1500 50  0001 C CNN
 	1    4250 1500
 	1    0    0    -1  
 $EndComp
@@ -712,7 +712,7 @@ P 7450 2850
 F 0 "U3" H 7350 3050 50  0000 C CNN
 F 1 "4093B" H 7600 3050 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7450 2850 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/cd4093b.pdf?ts=1626723872313&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FCD4093B" H 7450 2850 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/0c/9a/06/85/4d/aa/CD00000398.pdf/files/CD00000398.pdf/jcr:content/translations/en.CD00000398.pdf" H 7450 2850 50  0001 C CNN
 	2    7450 2850
 	1    0    0    -1  
 $EndComp
@@ -723,7 +723,7 @@ P 4350 6950
 F 0 "U3" H 4580 6996 50  0000 L CNN
 F 1 "4093B" H 4580 6905 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4350 6950 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/cd4093b.pdf?ts=1626723872313&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FCD4093B" H 4350 6950 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/0c/9a/06/85/4d/aa/CD00000398.pdf/files/CD00000398.pdf/jcr:content/translations/en.CD00000398.pdf" H 4350 6950 50  0001 C CNN
 	5    4350 6950
 	1    0    0    -1  
 $EndComp
@@ -743,9 +743,9 @@ L Device:R R8
 U 1 1 602C5D5E
 P 9150 3050
 F 0 "R8" H 9220 3096 50  0000 L CNN
-F 1 "392k" H 9220 3005 50  0000 L CNN
+F 1 "390k" H 9220 3005 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9080 3050 50  0001 C CNN
-F 3 "~" H 9150 3050 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-3GEYJ394V/135903" H 9150 3050 50  0001 C CNN
 	1    9150 3050
 	1    0    0    -1  
 $EndComp
@@ -756,7 +756,7 @@ P 8650 3400
 F 0 "C6" V 8398 3400 50  0000 C CNN
 F 1 ".22u" V 8489 3400 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8688 3250 50  0001 C CNN
-F 3 "https://www.digikey.com/en/products/detail/tdk-corporation/C1608X7R1C105K080AC/634399" H 8650 3400 50  0001 C CNN
+F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=EMK107B7224KA-T%20%20&u=M" H 8650 3400 50  0001 C CNN
 	1    8650 3400
 	0    1    1    0   
 $EndComp
@@ -769,7 +769,7 @@ P 10000 4500
 F 0 "R10" V 9793 4500 50  0000 C CNN
 F 1 "75k" V 9884 4500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9930 4500 50  0001 C CNN
-F 3 "~" H 10000 4500 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/ww/products/resistors/chip-resistors/general-purpose-chip-resistors/models/ERJ3GEYJ753V" H 10000 4500 50  0001 C CNN
 	1    10000 4500
 	0    1    1    0   
 $EndComp
@@ -782,7 +782,7 @@ P 5050 2250
 F 0 "R3" V 5257 2250 50  0000 C CNN
 F 1 "200k" V 5166 2250 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4980 2250 50  0001 C CNN
-F 3 "~" H 5050 2250 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-3GEYJ204V/104342" H 5050 2250 50  0001 C CNN
 	1    5050 2250
 	0    -1   -1   0   
 $EndComp
@@ -793,7 +793,7 @@ P 4900 2500
 F 0 "C2" H 5015 2546 50  0000 L CNN
 F 1 ".22u" H 5015 2455 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4938 2350 50  0001 C CNN
-F 3 "~" H 4900 2500 50  0001 C CNN
+F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=EMK107B7224KA-T%20%20&u=M" H 4900 2500 50  0001 C CNN
 	1    4900 2500
 	1    0    0    -1  
 $EndComp
@@ -815,7 +815,7 @@ P 4400 2550
 F 0 "U3" H 4400 2233 50  0000 C CNN
 F 1 "4093B" H 4400 2324 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4400 2550 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/cd4093b.pdf?ts=1626723872313&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FCD4093B" H 4400 2550 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/0c/9a/06/85/4d/aa/CD00000398.pdf/files/CD00000398.pdf/jcr:content/translations/en.CD00000398.pdf" H 4400 2550 50  0001 C CNN
 	3    4400 2550
 	-1   0    0    1   
 $EndComp
@@ -828,7 +828,7 @@ Wire Wire Line
 Wire Wire Line
 	5350 5450 5700 5450
 Wire Wire Line
-	2450 2000 2150 2000
+	2600 2000 2150 2000
 Wire Wire Line
 	2150 2000 2150 4800
 Wire Wire Line
@@ -902,7 +902,7 @@ P 3650 5450
 F 0 "R2" V 3450 5450 50  0000 C CNN
 F 1 "75k" V 3550 5450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3580 5450 50  0001 C CNN
-F 3 "~" H 3650 5450 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/ww/products/resistors/chip-resistors/general-purpose-chip-resistors/models/ERJ3GEYJ753V" H 3650 5450 50  0001 C CNN
 	1    3650 5450
 	0    -1   -1   0   
 $EndComp
@@ -973,7 +973,7 @@ P 9250 1750
 F 0 "U7" H 9250 1992 50  0000 C CNN
 F 1 "L78L05_TO92" H 9250 1901 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9250 1975 50  0001 C CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 9250 1700 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AS78Lxx.pdf" H 9250 1700 50  0001 C CNN
 	1    9250 1750
 	1    0    0    -1  
 $EndComp
@@ -1042,10 +1042,10 @@ Connection ~ 5600 3750
 Wire Wire Line
 	5600 3750 6900 3750
 Wire Wire Line
-	2350 2200 3050 2200
-Connection ~ 3050 2200
+	2350 2200 3200 2200
+Connection ~ 3200 2200
 Wire Wire Line
-	3050 2200 3050 2400
+	3200 2200 3200 2400
 $Comp
 L 4xxx:HEF4093B U5
 U 1 1 60FB1238
@@ -1053,7 +1053,7 @@ P 6650 4950
 F 0 "U5" H 6650 5275 50  0000 C CNN
 F 1 "4093B" H 6650 5184 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6650 4950 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 6650 4950 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/0c/9a/06/85/4d/aa/CD00000398.pdf/files/CD00000398.pdf/jcr:content/translations/en.CD00000398.pdf" H 6650 4950 50  0001 C CNN
 	1    6650 4950
 	1    0    0    -1  
 $EndComp
@@ -1066,7 +1066,7 @@ P 6750 5800
 F 0 "U5" H 6750 5483 50  0000 C CNN
 F 1 "4093B" H 6750 5574 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6750 5800 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 6750 5800 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/0c/9a/06/85/4d/aa/CD00000398.pdf/files/CD00000398.pdf/jcr:content/translations/en.CD00000398.pdf" H 6750 5800 50  0001 C CNN
 	2    6750 5800
 	-1   0    0    1   
 $EndComp
@@ -1077,7 +1077,7 @@ P 6600 4100
 F 0 "U5" H 6600 3800 50  0000 C CNN
 F 1 "4093B" H 6650 3900 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6600 4100 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 6600 4100 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/0c/9a/06/85/4d/aa/CD00000398.pdf/files/CD00000398.pdf/jcr:content/translations/en.CD00000398.pdf" H 6600 4100 50  0001 C CNN
 	3    6600 4100
 	-1   0    0    1   
 $EndComp
@@ -1096,7 +1096,7 @@ P 6850 2750
 F 0 "U5" H 6650 3100 50  0000 C CNN
 F 1 "4093B" H 6700 3000 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6850 2750 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 6850 2750 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/0c/9a/06/85/4d/aa/CD00000398.pdf/files/CD00000398.pdf/jcr:content/translations/en.CD00000398.pdf" H 6850 2750 50  0001 C CNN
 	4    6850 2750
 	1    0    0    -1  
 $EndComp
@@ -1109,7 +1109,7 @@ P 3500 6950
 F 0 "U5" H 3730 6996 50  0000 L CNN
 F 1 "4093B" H 3730 6905 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3500 6950 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 3500 6950 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/0c/9a/06/85/4d/aa/CD00000398.pdf/files/CD00000398.pdf/jcr:content/translations/en.CD00000398.pdf" H 3500 6950 50  0001 C CNN
 	5    3500 6950
 	1    0    0    -1  
 $EndComp
@@ -1118,9 +1118,9 @@ L Device:R R11
 U 1 1 60FD18E8
 P 7750 5700
 F 0 "R11" H 7820 5746 50  0000 L CNN
-F 1 "392k" H 7820 5655 50  0000 L CNN
+F 1 "390k" H 7820 5655 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7680 5700 50  0001 C CNN
-F 3 "~" H 7750 5700 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-3GEYJ394V/135903" H 7750 5700 50  0001 C CNN
 	1    7750 5700
 	0    -1   -1   0   
 $EndComp
@@ -1178,7 +1178,7 @@ P 8650 2950
 F 0 "C5" V 8398 2950 50  0000 C CNN
 F 1 ".1u" V 8489 2950 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8688 2800 50  0001 C CNN
-F 3 "https://www.digikey.com/en/products/detail/tdk-corporation/C1608X7R1C105K080AC/634399" H 8650 2950 50  0001 C CNN
+F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=EMK107BJ104KAHT%20%20&u=M" H 8650 2950 50  0001 C CNN
 	1    8650 2950
 	0    1    1    0   
 $EndComp
@@ -1227,7 +1227,7 @@ P 8050 4650
 F 0 "C9" H 8165 4696 50  0000 L CNN
 F 1 "4.7u" H 8165 4605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8088 4500 50  0001 C CNN
-F 3 "~" H 8050 4650 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/taiyo-yuden/JMK107BJ475MA-T/930607" H 8050 4650 50  0001 C CNN
 	1    8050 4650
 	1    0    0    -1  
 $EndComp
@@ -1248,7 +1248,7 @@ P 8050 4350
 F 0 "R9" H 8120 4396 50  0000 L CNN
 F 1 "200k" H 8120 4305 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7980 4350 50  0001 C CNN
-F 3 "~" H 8050 4350 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-3GEYJ204V/104342" H 8050 4350 50  0001 C CNN
 	1    8050 4350
 	1    0    0    -1  
 $EndComp
@@ -1270,7 +1270,7 @@ P 9650 3600
 F 0 "U6" H 9650 4067 50  0000 C CNN
 F 1 "14538B" H 9650 3976 50  0000 C CNN
 F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 9650 3600 50  0001 C CNN
-F 3 "https://www.onsemi.com/pub/Collateral/MC14538B-D.PDF" H 9650 3600 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/cd14538b.pdf?ts=1624847316445&ref_url=https%253A%252F%252Fwww.google.com%252F" H 9650 3600 50  0001 C CNN
 	1    9650 3600
 	1    0    0    -1  
 $EndComp
@@ -1281,7 +1281,7 @@ P 7650 4400
 F 0 "U3" H 7650 4083 50  0000 C CNN
 F 1 "4093B" H 7650 4174 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7650 4400 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/cd4093b.pdf?ts=1626723872313&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FCD4093B" H 7650 4400 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/0c/9a/06/85/4d/aa/CD00000398.pdf/files/CD00000398.pdf/jcr:content/translations/en.CD00000398.pdf" H 7650 4400 50  0001 C CNN
 	4    7650 4400
 	-1   0    0    1   
 $EndComp
@@ -1489,7 +1489,7 @@ motor on/off logic\nsee note <<<
 Text Notes 500  2400 0    50   Italic 0
 note: motor on/off logic\nmotor is on (output low)\nif not braking, pedal assist is on,\nand pedaling fast enough\notherwise, motor is off (output high)
 Text Notes 500  3550 0    50   Italic 0
-note: pedal cadence sense\ncadence threshold is nominally\n45rpm on/32rpm off, \nwith C6 installed, C5 uninstalled,\nand typical 4093 Vp/Vn values\n\ninstall C5+C6 to lower threshold, or\nmake up for 4093 Vp/Vn variation\n\ninstall C5 only to raise threshold, or\nmake up for 4093 Vp/Vn variation\n
+note: pedal cadence sense\ncadence threshold is nominally\n40rpm on/29rpm off, \nwith C6 installed, C5 uninstalled,\nand typical 4093 Vp/Vn values\n(Vp = 3.3, Vn = 2.3)\n\ninstall C5+C6 to lower threshold, or\nmake up for 4093 Vp/Vn variation\n\ninstall C5 only to raise threshold, or\nmake up for 4093 Vp/Vn variation\n
 Wire Wire Line
 	3300 5950 5600 5950
 Wire Wire Line
@@ -1543,4 +1543,8 @@ Wire Wire Line
 	4900 3350 5250 3350
 Wire Wire Line
 	4550 3450 4550 3750
+Text Notes 550  1100 0    50   ~ 0
+bridge to disable flashing\n(if desired when using standard kit)
+Wire Wire Line
+	2450 2500 2600 2500
 $EndSCHEMATC
