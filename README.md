@@ -1,5 +1,5 @@
 # qiroll-pedal-assist
-#### External pedal-assist system for Qiroll ebike kit, implemented with Arduino IDE on an attiny85 (Digispark clone) board, or with CMOS digital logic
+#### External pedal-assist system for Qiroll ebike kit, implemented with CMOS digital logic
 
 So I got this Qiroll friction-drive ebike [kit](https://www.aliexpress.com/item/4000366510773.html) to put on my commuter bike. For the price and weight I think it's pretty good, delivering an 18-20mph cruise on flat ground with light pedaling and 20-ish miles of range (with the larger battery option, your mileage may vary). *update: they're out with a new [pro](https://www.aliexpress.com/item/1005002066643128.html) [version](https://www.ebay.com/itm/Electric-Bicycle-E-BIKE-Conversion-Kit-QiROLL-Friction-Drive-QR-E-PRO-H70/402658347675) that's probably worth the extra cost if you're going to bother, more speed+range and suppposedly offers regen braking?*
 
@@ -17,5 +17,5 @@ This project aims to add pedal assist functionality to the Qiroll kit. I'm using
 * ___Use at your own risk! I reccomend extensive testing of whatever implementation you come up with, ensuring your brakes can stop the bike even if the motor sticks on, and having the battery cable within reach to disconnect if necessary!___
 
 #### Progress
-* Version 2 of digital logic version is nearly ready to order a PCB run, then I will assemble and test. Should be good, folks.
+* Version 2 of digital logic version tested and working, along with an optional, simple case for 3-d printing.
 * Arduino version is tabled for now since I'm having too much fun with the digital logic chips, but it remains an option if you'd like to pick up where I left off with better code and low power consumption optimization.
