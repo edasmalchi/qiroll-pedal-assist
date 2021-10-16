@@ -140,12 +140,12 @@ $EndComp
 $Comp
 L 4xxx:4027 U2
 U 3 1 602D3C3D
-P 2800 6950
-F 0 "U2" H 3200 7000 50  0000 R CNN
-F 1 "4027B" H 3250 6900 50  0000 R CNN
-F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 2800 6950 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/cd4027b-mil.pdf?ts=1624846134731&ref_url=https%253A%252F%252Fwww.google.com%252F" H 2800 6950 50  0001 C CNN
-	3    2800 6950
+P 2650 6950
+F 0 "U2" H 3050 7000 50  0000 R CNN
+F 1 "4027B" H 3100 6900 50  0000 R CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 2650 6950 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/cd4027b-mil.pdf?ts=1624846134731&ref_url=https%253A%252F%252Fwww.google.com%252F" H 2650 6950 50  0001 C CNN
+	3    2650 6950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -202,12 +202,12 @@ $EndComp
 $Comp
 L power:GND #PWR021
 U 1 1 6033C119
-P 3500 7450
-F 0 "#PWR021" H 3500 7200 50  0001 C CNN
-F 1 "GND" V 3505 7322 50  0001 R CNN
-F 2 "" H 3500 7450 50  0001 C CNN
-F 3 "" H 3500 7450 50  0001 C CNN
-	1    3500 7450
+P 4200 7450
+F 0 "#PWR021" H 4200 7200 50  0001 C CNN
+F 1 "GND" V 4205 7322 50  0001 R CNN
+F 2 "" H 4200 7450 50  0001 C CNN
+F 3 "" H 4200 7450 50  0001 C CNN
+	1    4200 7450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -241,12 +241,12 @@ $EndComp
 $Comp
 L Device:C C4
 U 1 1 6062E968
-P 5900 6950
-F 0 "C4" H 5650 6900 50  0000 L CNN
-F 1 ".1u" H 5650 7000 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5938 6800 50  0001 C CNN
-F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=EMK107BJ104KAHT%20%20&u=M" H 5900 6950 50  0001 C CNN
-	1    5900 6950
+P 5750 6950
+F 0 "C4" H 5500 6900 50  0000 L CNN
+F 1 ".1u" H 5500 7000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5788 6800 50  0001 C CNN
+F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=EMK107BJ104KAHT%20%20&u=M" H 5750 6950 50  0001 C CNN
+	1    5750 6950
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -321,9 +321,9 @@ L Device:CP1 C12
 U 1 1 607530FB
 P 10300 1900
 F 0 "C12" H 10550 1950 50  0000 R CNN
-F 1 "200u" H 10600 1850 50  0000 R CNN
+F 1 "470u" H 10600 1850 50  0000 R CNN
 F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 10300 1900 50  0001 C CNN
-F 3 "https://www.digikey.com/en/products/detail/rubycon/8AX200MEFC6-3X7/4842280" H 10300 1900 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/nichicon/UFW0J471MED/1964083" H 10300 1900 50  0001 C CNN
 	1    10300 1900
 	1    0    0    -1  
 $EndComp
@@ -446,12 +446,12 @@ $EndComp
 $Comp
 L 4xxx:14538 U6
 U 3 1 602B331E
-P 5200 6950
-F 0 "U6" H 5550 7000 50  0000 C CNN
-F 1 "14538B" H 5600 6900 50  0000 C CNN
-F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 5200 6950 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/cd14538b.pdf?ts=1624847316445&ref_url=https%253A%252F%252Fwww.google.com%252F" H 5200 6950 50  0001 C CNN
-	3    5200 6950
+P 5050 6950
+F 0 "U6" H 5400 7000 50  0000 C CNN
+F 1 "14538B" H 5450 6900 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 5050 6950 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/cd14538b.pdf?ts=1624847316445&ref_url=https%253A%252F%252Fwww.google.com%252F" H 5050 6950 50  0001 C CNN
+	3    5050 6950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -465,8 +465,6 @@ F 3 "https://www.ti.com/lit/ds/symlink/cd14538b.pdf?ts=1624847316445&ref_url=htt
 	2    9650 5350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5700 1900 5800 1900
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 610A2436
@@ -626,12 +624,12 @@ $EndComp
 $Comp
 L 4xxx:HEF4093B U1
 U 5 1 60FA9759
-P 1950 6950
-F 0 "U1" H 2180 6996 50  0000 L CNN
-F 1 "4093B" H 2180 6905 50  0000 L CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1950 6950 50  0001 C CNN
-F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/0c/9a/06/85/4d/aa/CD00000398.pdf/files/CD00000398.pdf/jcr:content/translations/en.CD00000398.pdf" H 1950 6950 50  0001 C CNN
-	5    1950 6950
+P 1800 6950
+F 0 "U1" H 2030 6996 50  0000 L CNN
+F 1 "4093B" H 2030 6905 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1800 6950 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/0c/9a/06/85/4d/aa/CD00000398.pdf/files/CD00000398.pdf/jcr:content/translations/en.CD00000398.pdf" H 1800 6950 50  0001 C CNN
+	5    1800 6950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -692,8 +690,6 @@ Wire Wire Line
 	2450 3700 2450 3300
 Wire Wire Line
 	2450 2500 2450 2750
-Wire Wire Line
-	5800 1900 5950 1900
 $Comp
 L 4xxx:HEF4093B U3
 U 1 1 61140168
@@ -719,12 +715,12 @@ $EndComp
 $Comp
 L 4xxx:HEF4093B U3
 U 5 1 61168D2E
-P 4350 6950
-F 0 "U3" H 4580 6996 50  0000 L CNN
-F 1 "4093B" H 4580 6905 50  0000 L CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4350 6950 50  0001 C CNN
-F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/0c/9a/06/85/4d/aa/CD00000398.pdf/files/CD00000398.pdf/jcr:content/translations/en.CD00000398.pdf" H 4350 6950 50  0001 C CNN
-	5    4350 6950
+P 4200 6950
+F 0 "U3" H 4430 6996 50  0000 L CNN
+F 1 "4093B" H 4430 6905 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4200 6950 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/0c/9a/06/85/4d/aa/CD00000398.pdf/files/CD00000398.pdf/jcr:content/translations/en.CD00000398.pdf" H 4200 6950 50  0001 C CNN
+	5    4200 6950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -858,12 +854,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR07
 U 1 1 60E123A7
-P 4000 5450
-F 0 "#PWR07" H 4000 5200 50  0001 C CNN
-F 1 "GND" V 4005 5322 50  0001 R CNN
-F 2 "" H 4000 5450 50  0001 C CNN
-F 3 "" H 4000 5450 50  0001 C CNN
-	1    4000 5450
+P 3200 5350
+F 0 "#PWR07" H 3200 5100 50  0001 C CNN
+F 1 "GND" V 3205 5222 50  0001 R CNN
+F 2 "" H 3200 5350 50  0001 C CNN
+F 3 "" H 3200 5350 50  0001 C CNN
+	1    3200 5350
 	1    0    0    -1  
 $EndComp
 Text Notes 7250 950  0    50   ~ 0
@@ -882,13 +878,13 @@ $EndComp
 $Comp
 L power:VDD #PWR04
 U 1 1 60E97622
-P 3200 5350
-F 0 "#PWR04" H 3200 5200 50  0001 C CNN
-F 1 "VDD" H 3215 5523 50  0000 C CNN
-F 2 "" H 3200 5350 50  0001 C CNN
-F 3 "" H 3200 5350 50  0001 C CNN
-	1    3200 5350
-	-1   0    0    1   
+P 4000 5450
+F 0 "#PWR04" H 4000 5300 50  0001 C CNN
+F 1 "VDD" H 4015 5623 50  0000 C CNN
+F 2 "" H 4000 5450 50  0001 C CNN
+F 3 "" H 4000 5450 50  0001 C CNN
+	1    4000 5450
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3300 5450 3500 5450
@@ -900,7 +896,7 @@ L Device:R R2
 U 1 1 60E0D46A
 P 3650 5450
 F 0 "R2" V 3450 5450 50  0000 C CNN
-F 1 "75k" V 3550 5450 50  0000 C CNN
+F 1 "1.6k" V 3550 5450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3580 5450 50  0001 C CNN
 F 3 "https://industrial.panasonic.com/ww/products/resistors/chip-resistors/general-purpose-chip-resistors/models/ERJ3GEYJ753V" H 3650 5450 50  0001 C CNN
 	1    3650 5450
@@ -935,12 +931,12 @@ Wire Wire Line
 $Comp
 L power:VDD #PWR01
 U 1 1 60FE2E0D
-P 3500 6450
-F 0 "#PWR01" H 3500 6300 50  0001 C CNN
-F 1 "VDD" V 3515 6578 50  0000 L CNN
-F 2 "" H 3500 6450 50  0001 C CNN
-F 3 "" H 3500 6450 50  0001 C CNN
-	1    3500 6450
+P 4200 6450
+F 0 "#PWR01" H 4200 6300 50  0001 C CNN
+F 1 "VDD" V 4215 6578 50  0000 L CNN
+F 2 "" H 4200 6450 50  0001 C CNN
+F 3 "" H 4200 6450 50  0001 C CNN
+	1    4200 6450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -953,8 +949,6 @@ Wire Wire Line
 	6250 5300 7300 5300
 Wire Wire Line
 	6250 5300 6250 5650
-Wire Wire Line
-	5800 2400 5800 5800
 Wire Wire Line
 	5500 4800 5500 5250
 Wire Wire Line
@@ -977,46 +971,12 @@ F 3 "https://www.diodes.com/assets/Datasheets/AS78Lxx.pdf" H 9250 1700 50  0001 
 	1    9250 1750
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x02_Male J6
-U 1 1 60FA088C
-P 5500 2300
-F 0 "J6" H 5600 2050 50  0000 C CNN
-F 1 "Jumper" H 5550 2150 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5500 2300 50  0001 C CNN
-F 3 "~" H 5500 2300 50  0001 C CNN
-	1    5500 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Male J3
-U 1 1 60FA20D5
-P 6000 2400
-F 0 "J3" H 6150 2550 50  0000 R CNN
-F 1 "Jumper" H 6150 2450 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6000 2400 50  0001 C CNN
-F 3 "~" H 6000 2400 50  0001 C CNN
-	1    6000 2400
-	-1   0    0    1   
-$EndComp
-Connection ~ 5800 1900
-Wire Wire Line
-	5800 1900 5800 2300
-Wire Wire Line
-	5700 2400 5700 5450
-Wire Wire Line
-	5700 2300 5700 1900
 Wire Wire Line
 	10250 5250 10250 6250
 Wire Wire Line
 	8500 5700 8500 6250
 Wire Wire Line
 	7100 5900 7100 6050
-Wire Wire Line
-	5600 5950 5600 5050
-Wire Wire Line
-	5600 5050 5050 5050
-Connection ~ 5600 5050
 Connection ~ 6300 5050
 Wire Wire Line
 	2450 2750 3200 2750
@@ -1105,12 +1065,12 @@ Wire Wire Line
 $Comp
 L 4xxx:HEF4093B U5
 U 5 1 6107E226
-P 3500 6950
-F 0 "U5" H 3730 6996 50  0000 L CNN
-F 1 "4093B" H 3730 6905 50  0000 L CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3500 6950 50  0001 C CNN
-F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/0c/9a/06/85/4d/aa/CD00000398.pdf/files/CD00000398.pdf/jcr:content/translations/en.CD00000398.pdf" H 3500 6950 50  0001 C CNN
-	5    3500 6950
+P 3350 6950
+F 0 "U5" H 3580 6996 50  0000 L CNN
+F 1 "4093B" H 3580 6905 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3350 6950 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/0c/9a/06/85/4d/aa/CD00000398.pdf/files/CD00000398.pdf/jcr:content/translations/en.CD00000398.pdf" H 3350 6950 50  0001 C CNN
+	5    3350 6950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1147,8 +1107,6 @@ Wire Wire Line
 	6800 1550 7050 1550
 Wire Wire Line
 	6600 1500 6600 1900
-Wire Wire Line
-	5950 1500 5950 1900
 Wire Wire Line
 	6050 1500 6050 2000
 Wire Wire Line
@@ -1320,41 +1278,39 @@ Wire Wire Line
 	9650 4200 9650 4250
 Connection ~ 9650 4250
 Wire Wire Line
-	1950 7450 2800 7450
-Connection ~ 3500 7450
+	1800 7450 2650 7450
+Connection ~ 3350 7450
 Wire Wire Line
-	3500 7450 4350 7450
-Connection ~ 4350 7450
+	3350 7450 4200 7450
+Connection ~ 4200 7450
 Wire Wire Line
-	2800 7350 2800 7450
-Connection ~ 2800 7450
+	2650 7350 2650 7450
+Connection ~ 2650 7450
 Wire Wire Line
-	2800 7450 3500 7450
+	2650 7450 3350 7450
 Wire Wire Line
-	1950 6450 2800 6450
-Connection ~ 3500 6450
+	1800 6450 2650 6450
+Connection ~ 3350 6450
 Wire Wire Line
-	3500 6450 4350 6450
-Connection ~ 4350 6450
+	3350 6450 4200 6450
+Connection ~ 4200 6450
 Wire Wire Line
-	4350 6450 5200 6450
+	4200 6450 5050 6450
 Wire Wire Line
-	2800 6450 2800 6550
-Connection ~ 2800 6450
+	2650 6450 2650 6550
+Connection ~ 2650 6450
 Wire Wire Line
-	2800 6450 3500 6450
+	2650 6450 3350 6450
 Wire Wire Line
-	5200 6450 5900 6450
+	5050 6450 5750 6450
 Wire Wire Line
-	5900 6450 5900 6800
-Connection ~ 5200 6450
+	5750 6450 5750 6800
+Connection ~ 5050 6450
 Wire Wire Line
-	5900 7100 5900 7450
+	5750 7100 5750 7450
 Wire Wire Line
-	4350 7450 5200 7450
-Connection ~ 5200 7450
-Wire Wire Line
-	5200 7450 5900 7450
+	4200 7450 5050 7450
+Connection ~ 5050 7450
 Wire Wire Line
 	6050 2000 7750 2000
 Wire Wire Line
@@ -1374,10 +1330,10 @@ Wire Wire Line
 Wire Wire Line
 	4100 3850 4100 6050
 Wire Wire Line
-	4650 5800 5800 5800
-Connection ~ 5800 5800
+	4650 5800 5850 5800
+Connection ~ 5850 5800
 Wire Wire Line
-	5800 5800 6450 5800
+	5850 5800 6450 5800
 Text Notes 9550 2650 0    50   ~ 0
 pedal cadence sense\nsee note <<<
 Wire Notes Line
@@ -1413,12 +1369,6 @@ Wire Notes Line
 Wire Notes Line
 	10750 600  7150 600 
 Wire Notes Line
-	4150 6150 5950 6150
-Wire Notes Line
-	5950 6150 5950 4500
-Wire Notes Line
-	5950 4500 4150 4500
-Wire Notes Line
 	4150 4500 4150 6150
 Wire Notes Line
 	4150 4350 4150 2950
@@ -1438,8 +1388,6 @@ Wire Notes Line
 	5350 2850 4150 2850
 Text Notes 4200 1950 0    50   ~ 0
 button debounce
-Text Notes 5850 2200 0    50   ~ 0
-connect J3 for std kit\nconnect J6 for pro kit
 Wire Notes Line
 	5400 1850 5400 2850
 Wire Notes Line
@@ -1491,12 +1439,6 @@ note: motor on/off logic\nmotor is on (output low)\nif not braking, pedal assist
 Text Notes 500  3550 0    50   Italic 0
 note: pedal cadence sense\ncadence threshold is nominally\n40rpm on/29rpm off, \nwith C6 installed, C5 uninstalled,\nand typical 4093 Vp/Vn values\n(Vp = 3.3, Vn = 2.3)\n\ninstall C5+C6 to lower threshold, or\nmake up for 4093 Vp/Vn variation\n\ninstall C5 only to raise threshold, or\nmake up for 4093 Vp/Vn variation\n
 Wire Wire Line
-	3300 5950 5600 5950
-Wire Wire Line
-	5600 5050 6300 5050
-Wire Wire Line
-	7150 2950 7150 4950
-Wire Wire Line
 	10250 3800 10150 3800
 Wire Wire Line
 	7300 4200 7300 4400
@@ -1545,4 +1487,102 @@ Wire Wire Line
 	4550 3450 4550 3750
 Wire Wire Line
 	2450 2500 2600 2500
+Wire Wire Line
+	6050 5950 6050 5050
+Wire Wire Line
+	3300 5950 6050 5950
+Wire Wire Line
+	6050 5050 6300 5050
+Wire Wire Line
+	5350 5150 5350 5050
+Wire Wire Line
+	5350 5050 5050 5050
+Wire Wire Line
+	5350 5150 7150 5150
+Wire Wire Line
+	7150 5150 7150 4950
+Wire Wire Line
+	7150 2950 7150 4550
+Wire Wire Line
+	6050 4550 6050 5050
+Wire Wire Line
+	6050 4550 7150 4550
+Connection ~ 6050 5050
+$Comp
+L Device:C C14
+U 1 1 6172BAAD
+P 6550 6950
+F 0 "C14" H 6665 6996 50  0000 L CNN
+F 1 "22u" H 6665 6905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6588 6800 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R60J226MEA0D/4280542" H 6550 6950 50  0001 C CNN
+	1    6550 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 6800 6550 6450
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP1
+U 1 1 617426DB
+P 5650 2050
+F 0 "JP1" H 5650 2163 50  0000 C CNN
+F 1 "SolderJumper_3_Bridged12" H 5650 2254 50  0001 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels" H 5650 2050 50  0001 C CNN
+F 3 "~" H 5650 2050 50  0001 C CNN
+	1    5650 2050
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4150 6150 5800 6150
+Wire Notes Line
+	5800 6150 5800 4500
+Wire Notes Line
+	5800 4500 4150 4500
+Wire Wire Line
+	5850 2050 5850 5800
+Wire Wire Line
+	5700 5450 5700 2800
+Wire Wire Line
+	5700 2800 5450 2800
+Wire Wire Line
+	5450 2050 5450 2800
+Wire Wire Line
+	5650 2200 5650 2350
+Wire Wire Line
+	5650 2350 5950 2350
+Wire Wire Line
+	5950 1500 5950 2350
+Text Notes 5950 2200 0    50   ~ 0
+default pro, cut NC\n& solder NO for std\n
+Wire Wire Line
+	6150 6450 5750 6450
+Connection ~ 5750 6450
+Wire Wire Line
+	6550 7100 6550 7450
+Wire Wire Line
+	5050 7450 5750 7450
+Connection ~ 5750 7450
+Wire Wire Line
+	5750 7450 6150 7450
+$Comp
+L Device:C C15
+U 1 1 618D98AE
+P 6150 6950
+F 0 "C15" H 6265 6996 50  0000 L CNN
+F 1 "1u" H 6265 6905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6188 6800 50  0001 C CNN
+F 3 "~" H 6150 6950 50  0001 C CNN
+	1    6150 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 6450 6150 6800
+Wire Wire Line
+	6150 7100 6150 7450
+Wire Wire Line
+	6150 7450 6550 7450
+Connection ~ 6150 7450
+Wire Wire Line
+	6550 6450 6150 6450
+Connection ~ 6150 6450
 $EndSCHEMATC
