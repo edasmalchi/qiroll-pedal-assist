@@ -17,5 +17,6 @@ This project aims to add pedal assist functionality to the Qiroll kit. I'm using
 * ___Use at your own risk! I reccomend extensive testing of whatever implementation you come up with, ensuring your brakes can stop the bike even if the motor sticks on, and having the battery cable within reach to disconnect if necessary!___
 
 #### Progress
-* Version 2 of digital logic version tested and working, along with an optional, simple case for 3D printing.
+* Version 2 of digital logic version generally works, with some instability during high-speed coasting.
+    * Version 2.2 pending assembly to hopefully fix this  
 * Arduino version is tabled for now since I'm having too much fun with the digital logic chips, but it remains an option if you'd like to pick up where I left off with better code and low power consumption optimization.
