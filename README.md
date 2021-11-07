@@ -18,7 +18,7 @@ This project aims to add pedal assist functionality to the Qiroll kit. I'm using
 * After much investigation, the power from the Qiroll micro-usb switch port seems to fluctuate quite a bit. So the reliable thing to do is tap into the + side of the battery, using a linear voltage regulator (or buck converter) to drop down the battery voltage.
 * ___Use at your own risk! I reccomend extensive testing of whatever implementation you come up with, ensuring your brakes can stop the bike even if the motor sticks on, and having the battery cable within reach to disconnect if necessary!___
 
-![pcb](/photos/pcb_v2.jpg?raw=true "pcb")
+![pcb](/photos/pcb-v2.jpg?raw=true "pcb")
 
 #### Progress
 * Version 2 of digital logic version generally works, with some instability during high-speed coasting.
