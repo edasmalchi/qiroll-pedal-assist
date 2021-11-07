@@ -10,7 +10,7 @@ The lack of any sort of pedal assist bothered me, with the original design you h
 This project aims to add pedal assist functionality to the Qiroll kit. I'm using this 12-magnet pedal assist [sensor](https://smile.amazon.com/gp/product/B08GY819YF/), although similar products could work too. The project also supports an optional brake sensor, I'm using [this one](https://www.aliexpress.com/item/4000445394702.html) but others likely work as well. Be sure to verify proper operation in case yours works differently.
 
 #### Hardware Mods
-* Since both my designs need only one button, with single-clicks turning pedal assist on/off and double-clicks switching controller modes (and/or enabling regen), I didn't need the second button in the original Qiroll switch. So I desoldered it, and used the space/wiring for a resistor and an led that lines up nicely with the hole left by taking the button out, letting me see if pedal assist is currently on or off!
+* Since my design needs only one button, with single-clicks turning pedal assist on/off and double-clicks switching controller modes (and/or enabling regen), I didn't need the second button in the original Qiroll switch. So I desoldered it, and used the space/wiring for a resistor and an led that lines up nicely with the hole left by taking the button out, letting me see if pedal assist is currently on or off!
 * Stripped the insulation and soldered into one of the battery wires to tap power-- should be fine since the pedal assist system uses very little current but be careful not to damage the battery wire itself. Alternatively you could get some of those Amass connectors it uses and make an adaptor.
 
 #### Notes
