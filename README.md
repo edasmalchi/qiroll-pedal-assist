@@ -21,7 +21,6 @@ This project aims to add pedal assist functionality to the Qiroll kit. I'm using
 ![pcb](/photos/pcb-v2.jpg?raw=true "pcb")
 
 #### Progress
-* Version 2 of digital logic version generally works, with some instability during high-speed coasting.
-    * Version 2.2 pending assembly to hopefully fix this  
+* Digital logic version 2.2 is built and ready to test, a minor improvement over 2.0.
 * A simple case for 3d printing
 * Arduino version is tabled for now since I'm having too much fun with the digital logic chips, but it remains an option if you'd like to pick up where I left off with better code and low power consumption optimization.
