@@ -3,7 +3,7 @@
 
 ![bike](/photos/bike.jpg?raw=true "bike")
 
-So I got this Qiroll friction-drive ebike kit  to put on my commuter bike. I'd reccomend the [pro](https://www.aliexpress.com/item/1005002066643128.html) [version](https://www.ebay.com/itm/Electric-Bicycle-E-BIKE-Conversion-Kit-QiROLL-Friction-Drive-QR-E-PRO-H70/402658347675), but the standard [kit](https://www.aliexpress.com/item/4000366510773.html) is still around. With light pedaling, the pro version cruises at about 25mph with about 25 miles of range, while the standard kit delivers about 19mph and about 20 miles.
+So I got this Qiroll friction-drive ebike kit  to put on my commuter bike. I'd reccomend the [pro](https://www.aliexpress.com/item/1005002975061464.html) [version](https://www.ebay.com/itm/Electric-Bicycle-E-BIKE-Conversion-Kit-QiROLL-Friction-Drive-QR-E-PRO-H70/402658347675) (about $600 shipped), but the standard [kit](https://www.aliexpress.com/item/4000366510773.html) (about $450 shipped) is still around. With light pedaling, the pro version cruises at about 25mph with about 25 miles of range, while the standard kit delivers about 19mph and about 20 miles (with the larger B70 battery).
 
 The lack of any sort of pedal assist bothered me, with the original design you have to hold down a switch to keep the motor on. (It's a simple switch, not a real throttle so the motor is either on or off. There is a way to select between a lower power mode and a higher power mode.)
 
