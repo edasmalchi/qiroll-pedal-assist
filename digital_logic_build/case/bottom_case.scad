@@ -48,11 +48,11 @@ translate([-((x/2)+.69),0,10-1.26])
 cube([1.5,y+2.9,19],center=true);
 
 //front lip
-translate([((x/2)+0.49),0,3.5-1.26])
-cube([1,y+2.9,6],center=true);
+//translate([((x/2)+0.49),0,3.5-1.26])
+//cube([1,y+2.9,6],center=true);
 //snout
-translate([((x/2)+3.45),0,3-1.26])
-cube([5,y+2.9,5],center=true);
+translate([((x/2)+3.0),0,3-1.26])
+cube([6.05,y+2.9,5],center=true);
 
 translate([3,((y/2)+.699),7.5-1.26])
 cube([x+6,1.5,7.8],center=true);
