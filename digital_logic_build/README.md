@@ -5,6 +5,7 @@ Built from some 4000-series CMOS chips, this design also implements pedal assist
 ### Notes
 * _v2.5 of the PCB version is complete! Board files in the kicad directory are suitable for ordering from JLCPCB, and maybe other sources too. Just track down the parts, do some medium-difficulty surface-mount soldering and you're done! Building on protoboard is also an option, feel free to try a stripped-down version of the design for that or I can help you come up with something_
 * Extremely fast double-clicks won't register. But it's easy enough to get a feel for it.
+* Per specification, there is 1.5ma of current available for the indicator LED. Please choose color+series resistor to be at or below 1.5ma at 3.3 volts.
 * See schematic for design notes
 
 ### PCB New Features
