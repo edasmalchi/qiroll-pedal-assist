@@ -53,7 +53,7 @@ P 9050 3250
 F 0 "R5" V 8843 3250 50  0000 C CNN
 F 1 "75k" V 8934 3250 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8980 3250 50  0001 C CNN
-F 3 "https://industrial.panasonic.com/ww/products/resistors/chip-resistors/general-purpose-chip-resistors/models/ERJ3GEYJ753V" H 9050 3250 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-3GEYJ753V/105103" H 9050 3250 50  0001 C CNN
 	1    9050 3250
 	1    0    0    -1  
 $EndComp
@@ -269,7 +269,7 @@ P 5300 1300
 F 0 "J2" V 5362 1444 50  0000 L CNN
 F 1 "led_sw1" V 5453 1444 50  0001 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5300 1300 50  0001 C CNN
-F 3 "~" H 5300 1300 50  0001 C CNN
+F 3 "~https://www.digikey.com/en/products/detail/molex/0022053041/26693" H 5300 1300 50  0001 C CNN
 	1    5300 1300
 	0    1    1    0   
 $EndComp
@@ -280,7 +280,7 @@ P 6150 1300
 F 0 "J4" V 6212 1444 50  0000 L CNN
 F 1 "mode_thr_batt" V 6303 1444 50  0001 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6150 1300 50  0001 C CNN
-F 3 "~" H 6150 1300 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/molex/0022053041/26693~" H 6150 1300 50  0001 C CNN
 	1    6150 1300
 	0    1    1    0   
 $EndComp
@@ -291,7 +291,7 @@ P 8900 2350
 F 0 "J3" V 8900 2500 50  0000 L CNN
 F 1 "accessory" V 8800 2200 50  0001 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8900 2350 50  0001 C CNN
-F 3 "~" H 8900 2350 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/molex/0022053031/26691~" H 8900 2350 50  0001 C CNN
 	1    8900 2350
 	0    1    1    0   
 $EndComp
@@ -318,7 +318,7 @@ F 3 "~" H 9850 1500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text Notes 5100 1300 1    50   ~ 0
-LED
+LED (1.5ma max!)
 Text Notes 5200 1300 1    50   ~ 0
 button
 Text Notes 6000 1300 1    50   ~ 0
@@ -365,7 +365,7 @@ P 8550 1200
 F 0 "R7" V 8343 1200 50  0000 C CNN
 F 1 "3.3k" V 8434 1200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8480 1200 50  0001 C CNN
-F 3 "" H 8550 1200 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/rohm-semiconductor/ESR03EZPJ332/4051239" H 8550 1200 50  0001 C CNN
 	1    8550 1200
 	0    1    1    0   
 $EndComp
@@ -618,7 +618,7 @@ P 10750 4200
 F 0 "R10" V 10543 4200 50  0000 C CNN
 F 1 "75k" V 10634 4200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 10680 4200 50  0001 C CNN
-F 3 "https://industrial.panasonic.com/ww/products/resistors/chip-resistors/general-purpose-chip-resistors/models/ERJ3GEYJ753V" H 10750 4200 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-3GEYJ753V/105103" H 10750 4200 50  0001 C CNN
 	1    10750 4200
 	0    1    1    0   
 $EndComp
@@ -667,7 +667,7 @@ F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/
 	-1   0    0    1   
 $EndComp
 Text Notes 7250 900  0    50   ~ 0
-battery input PTC protection\n3.3v linear regulator (input max 20v or 33v after R7 drop)\nmin current approx. ?ma\nmax current approx. 5ma
+battery input PTC protection\n3.3v linear regulator\nmin current approx. 225ua\nmax current approx. 3ma
 $Comp
 L power:VDD #PWR01
 U 1 1 60FE2E0D
@@ -856,7 +856,7 @@ P 5700 1750
 F 0 "D2" V 5700 1680 50  0000 R CNN
 F 1 "D" V 5655 1680 50  0001 R CNN
 F 2 "Diode_SMD:D_SOD-523" V 5700 1750 50  0001 C CNN
-F 3 "~" V 5700 1750 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/onsemi/RB520S30T1G/920291~" V 5700 1750 50  0001 C CNN
 	1    5700 1750
 	0    -1   -1   0   
 $EndComp
@@ -867,7 +867,7 @@ P 5950 1750
 F 0 "D3" V 5950 1680 50  0000 R CNN
 F 1 "D" V 5905 1680 50  0001 R CNN
 F 2 "Diode_SMD:D_SOD-523" V 5950 1750 50  0001 C CNN
-F 3 "~" V 5950 1750 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/onsemi/RB520S30T1G/920291~" V 5950 1750 50  0001 C CNN
 	1    5950 1750
 	0    -1   -1   0   
 $EndComp
@@ -889,7 +889,7 @@ P 1750 2350
 F 0 "R12" H 1820 2396 50  0000 L CNN
 F 1 "75k" H 1820 2305 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1680 2350 50  0001 C CNN
-F 3 "~" H 1750 2350 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-3GEYJ753V/105103" H 1750 2350 50  0001 C CNN
 	1    1750 2350
 	1    0    0    -1  
 $EndComp
@@ -911,7 +911,7 @@ P 2250 2100
 F 0 "D5" H 2250 2215 50  0000 C CNN
 F 1 "D" H 2250 2216 50  0001 C CNN
 F 2 "Diode_SMD:D_SOD-523" V 2250 2100 50  0001 C CNN
-F 3 "~" V 2250 2100 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/onsemi/RB520S30T1G/920291~" V 2250 2100 50  0001 C CNN
 	1    2250 2100
 	0    1    1    0   
 $EndComp
@@ -922,7 +922,7 @@ P 2450 1900
 F 0 "D4" H 2450 2015 50  0000 C CNN
 F 1 "D" H 2450 2016 50  0001 C CNN
 F 2 "Diode_SMD:D_SOD-523" V 2450 1900 50  0001 C CNN
-F 3 "~" V 2450 1900 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/onsemi/RB520S30T1G/920291~" V 2450 1900 50  0001 C CNN
 	1    2450 1900
 	0    -1   -1   0   
 $EndComp
@@ -1390,7 +1390,7 @@ P 6650 1300
 F 0 "J5" V 6700 1400 50  0000 L CNN
 F 1 "3_pin" V 6800 1400 50  0001 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6650 1300 50  0001 C CNN
-F 3 "~" H 6650 1300 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/molex/0022053031/26691~" H 6650 1300 50  0001 C CNN
 	1    6650 1300
 	0    1    1    0   
 $EndComp
@@ -1438,7 +1438,7 @@ P 5050 2200
 F 0 "R2" V 4850 2200 50  0000 C CNN
 F 1 "75k" V 4950 2200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4980 2200 50  0001 C CNN
-F 3 "https://industrial.panasonic.com/ww/products/resistors/chip-resistors/general-purpose-chip-resistors/models/ERJ3GEYJ753V" H 5050 2200 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-3GEYJ753V/105103" H 5050 2200 50  0001 C CNN
 	1    5050 2200
 	1    0    0    -1  
 $EndComp
