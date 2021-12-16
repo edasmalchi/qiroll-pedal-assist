@@ -28,4 +28,3 @@ This project aims to add pedal assist functionality to the Qiroll kit. I'm using
 #### Progress
 * Digital logic version 2.5 builds on 2.2 with usability improvements and taillight connector option
 * A simple case for 3d printing
-* Arduino version is tabled for now since I'm having too much fun with the digital logic chips, but it remains an option if you'd like to pick up where I left off with better code and low power consumption optimization.
