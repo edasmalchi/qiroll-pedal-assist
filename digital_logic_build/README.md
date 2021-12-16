@@ -21,3 +21,8 @@ _Illustration of the Qiroll kit without the circuit (top), and how the circuit i
 * most parts have a DigiKey or at least a datasheet link if you open the schematic in KiCad and click the "edit symbol fields" icon (4th from right at top)
 * also included a csv with part numbers that can be dragged directly into a DigiKey cart, note that it only has quantities for one board (multiply all by 5 if building more/sharing)
 * [build video](https://www.youtube.com/watch?v=RqBvx1b3l4g) (sorry for the poor production, feel free to skip around of course!)
+
+### Test it!
+* check the board visually for solder joint quality
+* _at minimum, verify the battery + voltage is not shorted to anything with a multimeter before connecting to the battery_
+* consider functional testing using LEDs to view signals on a breadboard and some sort of square wave generator (555 circuit works fine) to stand in for the PAS sensor
