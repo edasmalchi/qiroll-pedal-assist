@@ -20,4 +20,4 @@ _Illustration of the Qiroll kit without the circuit (top), and how the circuit i
 ### Build it!
 * most parts have a DigiKey or at least a datasheet link if you open the schematic in KiCad and click the "edit symbol fields" icon (4th from right at top)
 * also included a csv with part numbers that can be dragged directly into a DigiKey cart, note that it only has quantities for one board (multiply all by 5 if building more/sharing)
-* 
+* [build video](https://www.youtube.com/watch?v=RqBvx1b3l4g) (sorry for the poor production, feel free to skip around of course!)
