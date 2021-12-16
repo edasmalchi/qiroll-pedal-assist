@@ -10,4 +10,13 @@ Built from some 4000-series CMOS chips, this design also implements pedal assist
 ### PCB New Features
 * LED flashes under regenerative braking with PAS on or off
 * Regen cancel on pedal reliability improved
-* Optional brake sensor cancels assist and enters regen braking while mechanical brakes pulled
+* Optional brake sensor cancels assist and activates regen braking while mechanical brakes pulled
+
+<img src="/digital_logic_build/img/block_diagram.jpg?raw=true" alt="switch with LED added" width="800"/>
+
+_Illustration of the Qiroll kit without the circuit (top), and how the circuit interfaces (bottom)_
+
+### Build it!
+* most parts have a DigiKey or at least a datasheet link if you open the schematic in KiCad and click the "edit symbol fields" icon (4th from right at top)
+* also included a csv with part numbers that can be dragged directly into a DigiKey cart, note that it only has quantities for one board (multiply all by 5 if building more/sharing)
+* 
