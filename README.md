@@ -12,11 +12,11 @@ This project aims to add pedal assist functionality to the Qiroll kit. I'm using
 #### Hardware Mods
 * Since my design needs only one button, with single-clicks turning pedal assist on/off and double-clicks switching controller modes (and/or enabling regen), I didn't need the second button in the original Qiroll switch. So I desoldered it, and used the space/wiring for a resistor and an led that lines up nicely with the hole left by taking the button out, letting me see if pedal assist is currently on or off!
 
-![switch](/photos/switch_mod.jpg?raw=true "bike")
+<img src="/photos/switch_mod.jpg?raw=true" alt="switch with LED added" width="400"/>
 
 * Stripped the insulation and soldered into one of the battery wires to tap power-- should be fine since the pedal assist system uses very little current but be careful not to damage the battery wire itself. Alternatively you could get some of those Amass connectors it uses and make an adaptor.
 
-![cable](/photos/batt_cable.jpg?raw=true "bike")
+<img src="/photos/batt_cable.jpg?raw=true" alt="battery cable showing small wire soldered to + wire" width="400"/>
 
 #### Notes
 * The sensor I got reads in both directions, so it will trigger on backwards pedaling as well. I don't think this is a big deal, but there may be sensors out there that only read in one direction.
