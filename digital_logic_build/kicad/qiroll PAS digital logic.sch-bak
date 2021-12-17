@@ -97,7 +97,7 @@ P 8750 5200
 F 0 "C8" V 8498 5200 50  0000 C CNN
 F 1 "1u" V 8589 5200 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8788 5050 50  0001 C CNN
-F 3 "https://www.digikey.com/en/products/detail/taiyo-yuden/EMK107BJ105KAHT/4157319" H 8750 5200 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/taiyo-yuden/EMK107BJ105KAHT/4157319..." H 8750 5200 50  0001 C CNN
 	1    8750 5200
 	0    1    1    0   
 $EndComp
@@ -530,7 +530,7 @@ P 2150 1400
 F 0 "C1" H 2265 1446 50  0000 L CNN
 F 1 "1u" H 2265 1355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2188 1250 50  0001 C CNN
-F 3 "https://www.digikey.com/en/products/detail/taiyo-yuden/EMK107BJ105KAHT/4157319" H 2150 1400 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/taiyo-yuden/EMK107BJ105KAHT/4157319..." H 2150 1400 50  0001 C CNN
 	1    2150 1400
 	1    0    0    -1  
 $EndComp
@@ -845,7 +845,7 @@ P 6250 7150
 F 0 "C15" H 6365 7196 50  0000 L CNN
 F 1 "1u" H 6365 7105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6288 7000 50  0001 C CNN
-F 3 "~" H 6250 7150 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/taiyo-yuden/EMK107BJ105KAHT/4157319..." H 6250 7150 50  0001 C CNN
 	1    6250 7150
 	1    0    0    -1  
 $EndComp
