@@ -25,4 +25,4 @@ _Illustration of the Qiroll kit without the circuit (top), and how the circuit i
 ### Test it!
 * check the board visually for solder joint quality
 * _at minimum, verify the battery + voltage is not shorted to anything with a multimeter before connecting to the battery_
-* consider functional testing using LEDs to view signals on a breadboard and some sort of square wave generator (555 circuit works fine) to stand in for the PAS sensor
+* consider functional testing using LEDs to view signals on a breadboard and some sort of square wave generator (you could use a CMOS 555 or 4047B at 3.3v) to stand in for the PAS sensor
