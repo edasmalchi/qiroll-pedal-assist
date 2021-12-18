@@ -1428,7 +1428,7 @@ accessory_pwr
 Text Notes 6650 1300 1    50   ~ 0
 accessory_gnd
 Text Notes 5750 1650 1    50   ~ 0
-don’t install D2 for std
+install D2 for Pro kit only
 Wire Wire Line
 	3450 1400 4100 1400
 $Comp
@@ -1665,6 +1665,6 @@ Wire Wire Line
 	9150 4050 9150 4200
 Wire Wire Line
 	9150 4200 10600 4200
-Text Notes 2200 2600 1    50   ~ 0
-don’t install\nD5 for std
+Text Notes 2200 2800 1    50   ~ 0
+install\nD5 for Pro kit only
 $EndSCHEMATC

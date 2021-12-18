@@ -799,9 +799,9 @@ Text Notes 550  900  0    50   Italic 0
 note: motor on/off logic\nmotor is on (output low)\nif not braking, pedal assist is on,\nand pedaling fast enough\notherwise, motor is off (output high)
 Text Notes 550  1950 0    50   Italic 0
 note: pedal cadence sense\ncadence threshold is nominally\n40rpm on/29rpm off, \nwith C6 installed, C5 uninstalled,\nand typical 4093 Vp/Vn values\n(Vp = 3.3, Vn = 2.3)\n\ninstall C5+C6 to lower threshold, or\nmake up for 4093 Vp/Vn variation\n\ninstall C5 only to raise threshold, or\nmake up for 4093 Vp/Vn variation\n
-Text Notes 6900 4650 0    50   ~ 0
+Text Notes 6900 4450 0    50   ~ 0
 pedal
-Text Notes 6350 4200 0    50   ~ 0
+Text Notes 7150 5250 1    50   ~ 0
 pedal assist on
 $Comp
 L power:GND #PWR040
@@ -1273,11 +1273,11 @@ Wire Notes Line
 Wire Notes Line
 	2000 600  5000 600 
 Wire Notes Line
-	6200 2800 6200 4950
+	6200 2800 6200 5400
 Wire Notes Line
-	6200 4950 7200 4950
+	6200 5400 7200 5400
 Wire Notes Line
-	7200 4950 7200 3500
+	7200 5400 7200 3500
 Wire Notes Line
 	7200 3500 7850 3500
 Wire Notes Line
@@ -1358,7 +1358,7 @@ Wire Wire Line
 	8800 2550 8800 3400
 Connection ~ 9050 3400
 Wire Wire Line
-	7300 4650 7300 5500
+	7300 4450 7300 5500
 Connection ~ 8850 4050
 Wire Wire Line
 	8850 4050 8750 4050
@@ -1539,7 +1539,7 @@ Wire Wire Line
 Wire Wire Line
 	2250 2200 2250 4250
 Wire Wire Line
-	7300 4650 6900 4650
+	7300 4450 6900 4450
 Wire Wire Line
 	6300 4050 6300 4550
 $Comp
@@ -1553,10 +1553,6 @@ F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/63/6d/
 	3    6600 4550
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	7150 5300 7150 4450
-Wire Wire Line
-	7150 4450 6900 4450
 Wire Wire Line
 	5700 5300 7150 5300
 Wire Notes Line
@@ -1619,8 +1615,8 @@ Wire Wire Line
 Wire Wire Line
 	8150 3950 7300 3950
 Wire Wire Line
-	7300 3950 7300 4650
-Connection ~ 7300 4650
+	7300 3950 7300 4450
+Connection ~ 7300 4450
 Wire Notes Line
 	5350 2450 6750 2450
 Wire Notes Line
@@ -1636,10 +1632,10 @@ Wire Wire Line
 Wire Wire Line
 	9000 2600 9000 2550
 $Comp
-L power:VDD #PWR?
+L power:VDD #PWR0104
 U 1 1 622AB00C
 P 9050 3100
-F 0 "#PWR?" H 9050 2950 50  0001 C CNN
+F 0 "#PWR0104" H 9050 2950 50  0001 C CNN
 F 1 "VDD" H 9065 3273 50  0000 C CNN
 F 2 "" H 9050 3100 50  0001 C CNN
 F 3 "" H 9050 3100 50  0001 C CNN
@@ -1667,4 +1663,8 @@ Wire Wire Line
 	9150 4200 10600 4200
 Text Notes 2200 2800 1    50   ~ 0
 install\nD5 for Pro kit only
+Wire Wire Line
+	7150 4650 6900 4650
+Wire Wire Line
+	7150 4650 7150 5300
 $EndSCHEMATC
