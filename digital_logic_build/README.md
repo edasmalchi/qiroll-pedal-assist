@@ -12,6 +12,7 @@ Built from some 4000-series CMOS chips, this design also implements pedal assist
 * LED flashes under regenerative braking with PAS on or off
 * Regen cancel on pedal reliability improved
 * Optional brake sensor cancels assist and activates regen braking while mechanical brakes pulled
+* Optional accessory connector for a taillight, with brake sensor logic level output for brake light sensing (if taillight supports)
 
 <img src="/digital_logic_build/img/block_diagram.jpg?raw=true" alt="switch with LED added" width="800"/>
 
