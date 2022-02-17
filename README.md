@@ -15,6 +15,7 @@ This project aims to add pedal assist functionality to the Qiroll kit. I'm using
 <img src="/photos/switch_mod.jpg?raw=true" alt="switch with LED added" width="400"/>
 
 * Stripped the insulation and soldered into one of the battery wires to tap power-- should be fine since the pedal assist system uses very little current but be careful not to damage the battery wire itself. Alternatively you could get some of those Amass connectors it uses and make an adaptor.
+* Depending on your setup, cable strain at the battery connector seems to be an issue. Reccomend adding extra strain relief here, and consider tapping at the motor connection instead since splicing in another wire with solder does weaken things.
 
 <img src="/photos/batt_cable.jpg?raw=true" alt="battery cable showing small wire soldered to + wire" width="400"/>
 
@@ -28,3 +29,4 @@ This project aims to add pedal assist functionality to the Qiroll kit. I'm using
 #### Progress
 * Digital logic version 2.5 builds on 2.2 with usability improvements and taillight connector option
 * A simple case for 3d printing
+* Stripped-down "simple" digital logic version with through-hole components in case that better meets your needs
